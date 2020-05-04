@@ -3,7 +3,7 @@
     "name": "bedrijventerrein",
     "type": "ap",
     "title" : "Bedrijventerrein",
-    "eap": "OSLO-Bedrijventerrein.eap",
+    "eap": "OSLO-Bedrijventerrein-impl.eap",
     "diagram": "OSLO-BedrijventerreinImplementatieModel",
     "template": "bedrijventerrein-impl.j2",
     "publication-state": "https://data.vlaanderen.be/id/conceptscheme/StandaardStatus/KandidaatStandaard",
