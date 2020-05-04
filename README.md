@@ -1,15 +1,12 @@
-# OSLOthema-mijnThema
+# Bron Bedrijventerreinen
 
-**_Editors: lees eerst [deze richtlijnen](https://github.com/Informatievlaanderen/OSLO-toolchain/blob/master/doc-user/README.md)._**
+Deze repository bevat de afspraken voor de bron bedrijventerreinen.
+
+Het implementatiemodel bedrijventerrein is hier geconfigureerd.
 
 ## Administratieve informatie
 
 ### Tags
 Voor de beschikbare git tags om naar te refereren bij het maken van publicaties, zie de "Releases" tab in deze repo.
+Voor elke nieuwe verbetering aan het implementatiemodel worden er tags gemaakt.
 
-### Branches
-Overzicht van git branches die niet behoren tot de branches voor fixes die gedocumenteerd werden in de richtlijnen.
-
-| Branch | Bedoeling | Nog actief (j/n) |
-| ------ | --------- | ---------------- | 
-|  |  |  |
