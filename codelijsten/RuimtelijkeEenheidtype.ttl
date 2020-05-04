@@ -1,0 +1,25 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
+
+<https://data.vlaanderen.be/id/conceptscheme/RuimtelijkeEenheidtype> a skos:ConceptScheme;
+  skos:definition "De soort ruimtelijke eenheid deze entiteit beschrijft."@nl;
+  skos:prefLabel "Ruimtelijke Eenheidtype"@nl.
+
+
+<https://data.vlaanderen.be/id/concept/RuimtelijkeEenheidtype/ontwikkelbareBedrijvenzone> a skos:Concept;
+    skos:definition "Een ontwikkelbare bedrijvenzone is een ruimtelijke eenheid binnen een bedrijventerrein zoals beschreven vanaf de mijlpaal publicatie in het Belgisch Staatsblad tot aan de oplevering van de nutsvoorzieningen en infrastructuur. Deze zones kunnen nieuwe terreinen zijn of herontwikkelingstrajecten."@nl;
+    rdfs:seeAlso <https://data.vlaanderen.be/ns/bedrijventerrein#OntwikkelbareBedrijvenzone> ;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/RuimtelijkeEenheidtype>;
+    skos:prefLabel "ontwikkelbare bedrijvenzone"@nl;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/RuimtelijkeEenheidtype> .
+
+<https://data.vlaanderen.be/id/concept/RuimtelijkeEenheidtype/beheerdeBedrijvenzone> a skos:Concept;
+    skos:definition "Een beheerde bedrijvenzone is ruimtelijke eenheid binnen een bedrijventerrein dat onder eenzelfde beheerder valt."@nl;
+    rdfs:seeAlso <https://data.vlaanderen.be/ns/bedrijventerrein#BeheerdeBedrijvenzone> ;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/RuimtelijkeEenheidtype>;
+    skos:prefLabel "beheerde bedrijvenzone"@nl;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/RuimtelijkeEenheidtype> .
+

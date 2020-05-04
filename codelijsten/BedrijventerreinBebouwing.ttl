@@ -1,0 +1,26 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
+
+<https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinBebouwing> a skos:ConceptScheme;
+  skos:definition "De aanwezigheid van bebouwing op een ruimtelijke eenheid."@nl;
+  skos:prefLabel "BedrijventerreinBebouwing"@nl.
+
+
+<https://data.vlaanderen.be/id/concept/BedrijventerreinBebouwing/bebouwd> a skos:Concept;
+    skos:prefLabel "bebouwd"@nl;
+    skos:definition "Een bebouwd perceel is een perceel met een corrresponderend gebouw in het gebouwenregister met gebouwstatus inAanbouw of gerealiseerd."@nl;
+    skos:example "een fabriekspand, een kantoorgebouw, huizen, boogloods…"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinBebouwing>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinBebouwing> .
+
+<https://data.vlaanderen.be/id/concept/BedrijventerreinBebouwing/onbebouwd> a skos:Concept;
+    skos:prefLabel "onbebouwd"@nl;
+    skos:definition "Onbebouwde percelen zijn percelen zonder corrresponderend gebouw in het gebouwenregister met gebouwstatus inAanbouw of gerealiseerd."@nl;
+    skos:example "Puinopslag, grote parkeerplaats van een onderneming (niet openbaar), containeropslag, braakliggende grond, paardenweide, maisveld, zonnepanelen… "@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinBebouwing>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinBebouwing> .
+
+

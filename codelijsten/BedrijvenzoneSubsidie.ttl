@@ -1,0 +1,37 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
+
+<https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneSubsidietype> a skos:ConceptScheme;
+  skos:definition "Type van subsidie gegeven voor de ontwikkeling van de bedrijvenzone"@nl;
+  skos:prefLabel "BedrijvenzoneSubsidietype"@nl.
+
+
+<https://data.vlaanderen.be/id/concept/BedrijvenzoneSubsidietype/verouderd> a skos:Concept;
+    skos:prefLabel "verouderd"@nl;
+    skos:definition "Subsidie voor de herontwikkeling van een bedrijvenzone i.k.v. het decreet ruimtelijke economie"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneSubsidietype>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneSubsidietype> .
+
+<https://data.vlaanderen.be/id/concept/BedrijvenzoneSubsidietype/nieuw> a skos:Concept;
+    skos:prefLabel "nieuw"@nl;
+    skos:definition "Subsidie voor de ontwikkeling van een nieuwe bedrijvenzone i.k.v. het decreet ruimtelijke economie"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneSubsidietype>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneSubsidietype> .
+
+<https://data.vlaanderen.be/id/concept/BedrijvenzoneSubsidietype/brownfield> a skos:Concept;
+    skos:prefLabel "brownfield"@nl;
+    skos:definition "Subsidie voor de herontwikkeling van een brownfield i.k.v. het decreet ruimtelijke economie"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneSubsidietype>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneSubsidietype> .
+
+<https://data.vlaanderen.be/id/concept/BedrijvenzoneSubsidietype/beheer> a skos:Concept;
+    skos:prefLabel "beheer"@nl;
+    skos:definition "Subsidie voor het beheer van een bedrijvenzone i.k.v. het decreet ruimtelijke economie"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneSubsidietype>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneSubsidietype> .
+
+
+

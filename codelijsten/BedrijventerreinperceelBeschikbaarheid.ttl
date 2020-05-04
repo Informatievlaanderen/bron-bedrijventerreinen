@@ -1,0 +1,31 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
+
+<https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeschikbaarheid> a skos:ConceptScheme;
+  skos:definition ""@nl;
+  skos:prefLabel "BedrijventerreinperceelBeschikbaarheid"@nl.
+
+
+<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeschikbaarheid/aangeboden> a skos:Concept;
+    skos:prefLabel "aangeboden"@nl;
+    skos:definition "Bebouwd of onbebouwd bedrijventerreinperceel dat actief wordt aangeboden"@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeschikbaarheid>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeschikbaarheid> .
+
+<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeschikbaarheid/nietaangeboden> a skos:Concept;
+    skos:prefLabel "niet aangeboden"@nl;
+    skos:definition "geen kennis van een actief aanbod."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeschikbaarheid>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeschikbaarheid> .
+
+<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeschikbaarheid/optie> a skos:Concept;
+    skos:prefLabel "optie"@nl;
+    skos:definition "De optie is: ‘een beding waarbij één der partijen zich verbindt om, indien de wederpartij dat wenst, met haar een bepaalde overeenkomst te sluiten.’ Het verlenen van een optie staat dan gelijk aan een onherroepelijk aanbod."@nl;
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeschikbaarheid>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeschikbaarheid> .
+
+    
+

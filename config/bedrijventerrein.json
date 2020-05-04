@@ -1,0 +1,35 @@
+[
+  {
+    "name": "bedrijventerrein",
+    "type": "ap",
+    "title" : "Bedrijventerrein",
+    "eap": "OSLO-Bedrijventerrein.eap",
+    "diagram": "OSLO-BedrijventerreinImplementatieModel",
+    "template": "bedrijventerrein-impl.j2",
+    "publication-state": "https://data.vlaanderen.be/id/conceptscheme/StandaardStatus/KandidaatStandaard",
+    "publication-date": "2020-04-5",
+    "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
+    "contributors-file": "stakeholders.csv",
+    "contributors-column": "bedrijventerrein",
+    "site": "site-skeleton/bedrijventerrein",
+    "feedbackurl": "https://github.com/Informatievlaanderen/bron-bedrijventerreinen/issues",
+    "standaardregisterurl": "https://data.vlaanderen.be/standaarden/kandidaat-standaarden/applicatieprofiel-bedrijventerreinen/applicatieprofiel-bedrijventerreinen.html",
+    "dependencies": [
+        {
+          "package": "OSLO-Generiek",
+          "packagelabel": "Appplicatieprofiel Generiek-basis",
+          "packageurl": "https://otl-test.data.vlaanderen.be/doc/applicatieprofiel/generiek-basis/"
+        }, 
+        {
+          "package": "OSLO-Perceel",
+          "packagelabel": "Appplicatieprofiel bedrijventerrein",
+          "packageurl": "https://data.vlaanderen.be/doc/applicatieprofiel/bedrijventerrein"
+        },
+        {
+          "package": "OSLO-Bedrijventerrein",
+          "packagelabel": "Appplicatieprofiel bedrijventerrein",
+          "packageurl": "https://data.vlaanderen.be/doc/applicatieprofiel/bedrijventerrein"
+        } 
+    ]
+  }
+]
