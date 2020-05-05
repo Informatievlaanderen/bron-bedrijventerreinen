@@ -34,7 +34,9 @@ jobs:
       - run:
           name: convert all csv files
           command: |
-            node /app/json-renderer.js -t $PWD/template/bedrijventerrein.template -i /tmp/workspace/target/bedrijventerrein.csv  -o /tmp/workspace/target/bedrijventerrein.jsonld
+            cp $PWD/scripts/Makefile /tmp/workspace
+            pushd /tmp/workspace
+            make rdf
       - run:
           name: List the files which have been created
           command: ls -al /tmp/workspace/*

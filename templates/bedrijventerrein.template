@@ -1,0 +1,4 @@
+{ "@context" : "https://test.data.vlaanderen.be/doc/implementatiemodel/bedrijventerrein/kandidaatstandaard/2020-05-04/context/bedrijventerrein.jsonld",
+  "@id" : "{{ID}}",
+  "@type" : "Bedrijventerrein"
+}
