@@ -5,11 +5,15 @@ jobs:
       - image: geographica/gdal2:2.4.0 
     steps:
       - checkout
-      - run: mkdir -p workspace
+      - run: mkdir -p /tmp/workspace
       - run:
           name: install base software
           command: |
             apt-get update && apt-get install -y vim dbview unzip wget less
+      - run:
+          name: transform fileGDB to csv
+          command: |
+            /scripts/geodb2csv.sh bron-bedrijventerrein.gdb.zip 
       - run:
           name: List the files which have been created
           command: ls -al /tmp/workspace/*
