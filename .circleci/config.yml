@@ -24,6 +24,24 @@ jobs:
           root: /tmp/workspace
           paths:
             - target/
+  transform2RDF:
+    docker:
+      - image: bertvannuffelen/any2jsonld
+    steps:
+      - checkout
+      - attach_workspace:
+          at: /tmp/workspace
+      - run:
+          name: convert all csv files
+          command: |
+            node /app/json-renderer.js -t $PWD/template/bedrijventerrein.template -i /tmp/workspace/target/bedrijventerrein.csv  -o /tmp/workspace/target/bedrijventerrein.jsonld
+      - run:
+          name: List the files which have been created
+          command: ls -al /tmp/workspace/*
+      - persist_to_workspace:
+          root: /tmp/workspace
+          paths:
+            - target/
   create-artifact:
     docker:
       - image: circleci/node
@@ -67,6 +85,9 @@ workflows:
   generate_documentation:
     jobs:
       - extract-csv
-      - create-artifact:
+      - transform2RDF:
           requires:
             - extract-csv
+      - create-artifact:
+          requires:
+            - transform2RDF
