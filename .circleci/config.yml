@@ -13,7 +13,7 @@ jobs:
       - run:
           name: transform fileGDB to csv
           command: |
-            /scripts/geodb2csv.sh bron-bedrijventerrein.gdb.zip 
+            $PWD/scripts/geodb2csv.sh $PWD/bron-bedrijventerrein.gdb.zip bron-bedrijventerrein
       - run:
           name: List the files which have been created
           command: ls -al /tmp/workspace/*
