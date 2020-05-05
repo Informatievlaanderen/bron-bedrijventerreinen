@@ -1,14 +1,14 @@
 SHELL=/bin/bash
-WORKDIR=/tmp/workdir
+WORKDIR=/tmp/workspace
 OUTPUT=${WORKDIR}/target/output
-INPUT=${WORKDIR}/target/
-TEMPLATE=${CIRCLE_WORKING_DIRECTORY}/template
+INPUT=${WORKDIR}/target
+TEMPLATE=${CIRCLE_WORKING_DIRECTORY}/templates
 
 output:
 	mkdir -p ${OUTPUT}
 
 
-JSONLDFILES=${OUTPUT}/bedrijventerrein.jsonld 
+JSONLDFILES=${OUTPUT}/Bedrijventerrein.jsonld 
 
 TTLFILES=$(JSONLDFILES:.jsonld=.ttl)
 
@@ -16,8 +16,11 @@ TTLFILES=$(JSONLDFILES:.jsonld=.ttl)
 %.ttl: %.jsonld
 	jsonld format -q $< > $@
 
-${OUTPUT}/bedrijventerrein.jsonld: ${INPUT}/bedrijventerrein.csv ${TEMPLATE}/bedrijventerrein.template
-	node /app/json-renderer.js -t ${TEMPLATE}/bedrijventerrein.template -i $< -o $@
+${OUTPUT}/Bedrijventerrein.jsonld: ${INPUT}/Bedrijventerrein.csv 
+	node /app/csv-renderer.js -t ${TEMPLATE}/bedrijventerrein.template -i $< -o $@
+
+${INPUT}/Bedrijventerrein.csv:
+	touch ${INPUT}/Bedrijventerrein.csv
 
 rdf: output ${TTLFILES}
 
