@@ -13,4 +13,5 @@ pushd ${WORKDIR}
 unzip ${FILE}
 ogr2ogr -f CSV -lco GEOMETRY=AS_WKT -lco ENCODING=UTF-8 -skipfailures ${OUTFILE}.csv ${FILE}
 
+cp *.csv ${WORKDIR}/target
 popd
