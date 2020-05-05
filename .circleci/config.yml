@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run:
           name: create work directory
-          run: |
+          command: |
             mkdir -p /tmp/workspace/target
       - run:
           name: install base software
