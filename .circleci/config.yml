@@ -62,4 +62,4 @@ workflows:
       - extract-csv
       - create-artifact:
           requires:
-            - extract-codelists
+            - extract-csv
