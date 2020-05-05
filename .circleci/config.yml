@@ -1,15 +1,15 @@
 version: 2
 jobs:
-  extract-codelists:
+  extract-csv:
     docker:
-      - image: bertvannuffelen/codelist-aggregator
+      - image: geographica/gdal2:2.4.0 
     steps:
       - checkout
       - run: mkdir -p workspace
       - run:
-          name: aggregate-codelists
+          name: install base software
           command: |
-            /scripts/aggregatecodelist.sh codelijsten
+            apt-get update && apt-get install -y vim dbview unzip wget less
       - run:
           name: List the files which have been created
           command: ls -al /tmp/workspace/*
@@ -32,7 +32,7 @@ jobs:
           workdir: /tmp
           command: |
             rm -rf codelist-generated
-            git clone git@github.com:Informatievlaanderen/OSLO-codelistgenerated.git
+            git clone git@github.com:bertvannuffelen/OSLO-codelistgenerated.git
       - run:
           name: Switch to the target directory
           workdir: /tmp/OSLO-codelistgenerated
@@ -59,7 +59,7 @@ workflows:
   version: 2
   generate_documentation:
     jobs:
-      - extract-codelists
+      - extract-csv
       - create-artifact:
           requires:
             - extract-codelists
