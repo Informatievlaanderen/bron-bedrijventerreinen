@@ -11,14 +11,14 @@
 
 <https://data.vlaanderen.be/id/concept/BedrijventerreinBebouwing/bebouwd> a skos:Concept;
     skos:prefLabel "bebouwd"@nl;
-    skos:definition "Een bebouwd perceel is een perceel met een corrresponderend gebouw in het gebouwenregister met gebouwstatus inAanbouw of gerealiseerd."@nl;
+    skos:definition "een bebouwd perceel is een perceel met een corresponderend hoofdgebouw, een bijgebouw met een eigen adres of een kunstwerk  uit het GRB."@nl;
     skos:example "een fabriekspand, een kantoorgebouw, huizen, boogloods…"@nl;
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinBebouwing>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinBebouwing> .
 
 <https://data.vlaanderen.be/id/concept/BedrijventerreinBebouwing/onbebouwd> a skos:Concept;
     skos:prefLabel "onbebouwd"@nl;
-    skos:definition "Onbebouwde percelen zijn percelen zonder corrresponderend gebouw in het gebouwenregister met gebouwstatus inAanbouw of gerealiseerd."@nl;
+    skos:definition "Onbebouwde percelen zijn percelen zonder corresponderend hoofdgebouw, bijgebouw met een eigen adres of kunstwerk  uit het GRB."@nl;
     skos:example "Puinopslag, grote parkeerplaats van een onderneming (niet openbaar), containeropslag, braakliggende grond, paardenweide, maisveld, zonnepanelen… "@nl;
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinBebouwing>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinBebouwing> .
