@@ -59,7 +59,7 @@ jobs:
           workdir: /tmp
           command: |
             rm -rf codelist-generated
-            git clone git@github.com:bertvannuffelen/OSLO-codelistgenerated.git
+            git clone git@github.com:djoewie/OSLO-codelistgenerated.git
       - run:
           name: Switch to the target directory
           workdir: /tmp/OSLO-codelistgenerated
