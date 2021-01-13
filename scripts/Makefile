@@ -8,15 +8,16 @@ output:
 	mkdir -p ${OUTPUT}
 
 
-JSONLDFILES=${OUTPUT}/Bedrijventerrein.jsonld 
+JSONLDFILES=${OUTPUT}/Bedrijventerrein.jsonld
 
 TTLFILES=$(JSONLDFILES:.jsonld=.ttl)
 
 
 %.ttl: %.jsonld
+	cat $<
 	jsonld format -q $< > $@
 
-${OUTPUT}/Bedrijventerrein.jsonld: ${INPUT}/Bedrijventerrein.csv 
+${OUTPUT}/Bedrijventerrein.jsonld: ${INPUT}/Bedrijventerrein.csv
 	node /app/csv-renderer.js -t ${TEMPLATE}/bedrijventerrein.template -i $< -o $@
 
 ${INPUT}/Bedrijventerrein.csv:
