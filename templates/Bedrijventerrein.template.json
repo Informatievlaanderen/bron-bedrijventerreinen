@@ -1,0 +1,99 @@
+{
+  "@context": "https://test.data.vlaanderen.be/doc/implementatiemodel/bedrijventerrein/kandidaatstandaard/2020-05-04/context/bedrijventerrein.jsonld",
+  "@type": "Bedrijventerrein",
+  "@id": {
+    "template_type": "uri",
+    "template_key": "Id_bedrijventerrein",
+    "template_base_uri": "https://bedrijventerreinen.vlaanderen.be/id/bedrijventerrein/"
+  },
+  "Bedrijventerrein.alternatieveNaam": {
+    "template_type": "languageText",
+    "template_key": "CommerciëleNaam"
+  },
+  "Bedrijventerrein.beschikbareKavels": {
+    "template_type": "boolean",
+    "template_key": "BeschikbarePercelen"
+  },
+  "Bedrijventerrein.beschikbareOppervlakte": {
+    "@type": "KwantitatieveWaarde",
+    "KwantitatieveWaarde.standaardEenheid": "http://qudt.org/vocab/unit/M2",
+    "KwantitatieveWaarde.waarde": {
+      "template_type": "number",
+      "template_key": "BeschikbareOppervlakte"
+    }
+  },
+  "Bedrijventerrein.geldigheidsperiode": {
+    "@type": "Periode",
+    "Periode.begin": {
+      "template_type": "date",
+      "template_key": "Geldigheidsperiode_Begin"
+    },
+    "Periode.einde": {
+      "template_type": "date",
+      "template_key": "Geldigheidsperiode_Einde"
+    }
+  },
+  "Bedrijventerrein.geometrie": [
+    {
+      "@type": "RuimtelijkeEenheidGeometrie",
+      "RuimtelijkeEenheidGeometrie.default": {
+        "template_type": "boolean",
+        "template_key": "Geometrie_Default"
+      },
+      "RuimtelijkeEenheidGeometrie.geometrie": {
+        "@type": "Geometrie",
+        "Geometrie.gml": {
+          "template_type": "text",
+          "template_key": "Geometrie_Gml"
+        },
+        "Geometrie.wkt": {
+          "template_type": "text",
+          "template_key": "Geometrie_Wkt"
+        }
+      },
+      "RuimtelijkeEenheidGeometrie.methode": {
+        "template_type": "uri",
+        "template_key": "Geometrie_Methode",
+        "template_base_uri": "https://data.vlaanderen.be/id/conceptscheme/2Dgeometriemethod/"
+      }
+    }
+  ],
+  "Bedrijventerrein.identificator": {
+    "@type": "Identificator",
+    "Identificator.identificator": {
+      "template_type": "id",
+      "template_key": "Id_bedrijventerrein"
+    }
+  },
+  "Bedrijventerrein.naam": {
+    "template_type": "languageText",
+    "template_key": "Naam"
+  },
+  "Bedrijventerrein.oppervlakte": [
+    {
+      "@type": "RuimtelijkeEenheidOppervlakte",
+      "RuimtelijkeEenheidOppervlakte.officiëleOppervlakte": {
+        "template_type": "boolean",
+        "template_key": "OfficiëleOppervlakte"
+      },
+      "RuimtelijkeEenheidOppervlakte.oppervlakte": {
+        "@type": "KwantitatieveWaarde",
+        "KwantitatieveWaarde.standaardEenheid": "http://qudt.org/vocab/unit/M2",
+        "KwantitatieveWaarde.waarde": {
+          "template_type": "number",
+          "template_key": "Oppervlakte"
+        }
+      },
+      "RuimtelijkeEenheidOppervlakte.type": {
+        "template_type": "uri",
+        "template_key": "OppervlakteType",
+        "template_base_uri": "https://data.vlaanderen.be/id/concept/RuimtelijkeEenheidOppervlaktetype/"
+      }
+    }
+  ],
+  "Bedrijventerrein.type": {
+    "template_type": "uri",
+    "template_key": "RuimtelijkeEenheidType",
+    "template_base_uri": "https://data.vlaanderen.be/id/concept/RuimtelijkeEenheidtype/"
+  }
+}

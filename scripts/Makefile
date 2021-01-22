@@ -18,10 +18,22 @@ TTLFILES=$(JSONLDFILES:.jsonld=.ttl)
 	jsonld format -q $< > $@
 
 ${OUTPUT}/Bedrijventerrein.jsonld: ${INPUT}/Bedrijventerrein.csv
-	node /app/csv-renderer.js -t ${TEMPLATE}/bedrijventerrein.template -i $< -o $@
+	node /app/csv-renderer.js -t ${TEMPLATE}/Bedrijventerrein.template.json -i $< -o $@
+
+${OUTPUT}/BedrijventerreinPerceel.jsonld: ${INPUT}/BedrijventerreinPerceel.csv
+	node /app/csv-renderer.js -t ${TEMPLATE}/BedrijventerreinPerceel.template.json -i $< -o $@
+
+${OUTPUT}/BeheerdeBedrijvenzone.jsonld: ${INPUT}/BeheerdeBedrijvenzone.csv
+	node /app/csv-renderer.js -t ${TEMPLATE}/BeheerdeBedrijvenzone.template.json -i $< -o $@
+
+${OUTPUT}/OntwikkelbareBedrijvenzone.jsonld: ${INPUT}/OntwikkelbareBedrijvenzone.csv
+	node /app/csv-renderer.js -t ${TEMPLATE}/OntwikkelbareBedrijvenzone.template.json -i $< -o $@
 
 ${INPUT}/Bedrijventerrein.csv:
 	touch ${INPUT}/Bedrijventerrein.csv
 
 rdf: output ${TTLFILES}
+
+
+clean: rm -r ${OUTPUT}
 
