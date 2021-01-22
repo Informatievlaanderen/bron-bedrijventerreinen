@@ -29,13 +29,15 @@
     "template_key":"Bebouwing", "template_base_uri":"https://data.vlaanderen.be/id/concept/BedrijventerreinBebouwing/"
   },
   "Bedrijventerreinperceel.beperking":  {
-    "template_type":"list",
+    "template_type":"listOfUri",
       "template_amount":4,
-    "template_key":"Beperking"
+    "template_key":"Beperking",
+    "template_base_uri":"https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/"
   },
   "Bedrijventerreinperceel.beschikbaarheid": {
-    "template_type":"text",
-    "template_key":"Beschikbaarheid"
+    "template_type":"uri",
+    "template_key":"Beschikbaarheid",
+    "template_base_uri":"https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeschikbaarheid/"
   },
   "Bedrijventerreinperceel.functie": [{
   "@type":"Functiewaarde",
