@@ -41,9 +41,13 @@
   },
   "Bedrijventerreinperceel.functie": [{
   "@type":"Functiewaarde",
-  "Functiewaarde.percentage":100,
-  "Functiewaarde.type":"https://data.vlaanderen.be/id/concept/BedrijventerreinperceelFunctie/nietgekend"
-  }],
+  "Functiewaarde.type":
+    {
+      "template_type":"uri",
+      "template_key":"Bebouwing",
+      "template_base_uri":"https://data.vlaanderen.be/id/concept/BedrijventerreinperceelFunctie/"
+    }
+  ],
   "Bedrijventerrein.geldigheidsperiode": {
     "@type":"Periode",
     "Periode.begin": {
