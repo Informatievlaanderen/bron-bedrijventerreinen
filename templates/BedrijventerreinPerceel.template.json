@@ -39,6 +39,11 @@
     "template_key":"Beschikbaarheid",
     "template_base_uri":"https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeschikbaarheid/"
   },
+  "Bedrijventerreinperceel.inGebruik": {
+    "template_type":"uri",
+    "template_key":"Gebruik",
+    "template_base_uri":"https://data.vlaanderen.be/id/concept/BedrijventerreinInGebruik/"
+  },
   "Bedrijventerreinperceel.functie": [{
   "@type":"Functiewaarde",
   "Functiewaarde.type":
