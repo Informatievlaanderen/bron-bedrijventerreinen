@@ -44,7 +44,7 @@
   "Functiewaarde.type":
     {
       "template_type":"uri",
-      "template_key":"Bebouwing",
+      "template_key":"Functie",
       "template_base_uri":"https://data.vlaanderen.be/id/concept/BedrijventerreinperceelFunctie/"
     }
   ],
