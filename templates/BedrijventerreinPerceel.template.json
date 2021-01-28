@@ -65,9 +65,14 @@
     "template_type":"boolean",
     "template_key":"Geometrie_Default"
   },
+
        "RuimtelijkeEenheidGeometrie.geometrie": {
-         "@type": "Geometrie"
-       },
+        "@type": "Geometrie",
+        "Geometrie.wkt": {
+          "template_type": "text",
+          "template_key": "WKT"
+        }
+      },
        "RuimtelijkeEenheidGeometrie.methode":{
     "template_type":"uri",
     "template_key":"Geometrie_Methode", "template_base_uri":"https://data.vlaanderen.be/id/conceptscheme/2Dgeometriemethod/"
