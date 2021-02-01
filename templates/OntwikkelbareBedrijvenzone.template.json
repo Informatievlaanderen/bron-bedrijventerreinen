@@ -76,7 +76,7 @@
       "template_key": "OntwikkelaarOrganisatie"
     }
   },
-  "OntwikkelbareBedrijvenzone.oppervlakte": {
+  "OntwikkelbareBedrijvenzone.oppervlakte": [{
     "@type": "RuimtelijkeEenheidOppervlakte",
     "RuimtelijkeEenheidOppervlakte.officiëleOppervlakte": {
       "template_type": "boolean",
@@ -95,7 +95,7 @@
       "template_key": "OppervlakteType",
       "template_base_uri": "https://data.vlaanderen.be/id/concept/RuimtelijkeEenheidOppervlaktetype/"
     }
-  },
+  }],
   "OntwikkelbareBedrijvenzone.statusOntwikkeling": {
     "template_type": "uri",
     "template_key": "StatusOntwikkeling",
@@ -107,7 +107,7 @@
     "template_base_uri": "https://data.vlaanderen.be/id/concept/RuimtelijkeEenheidtype/"
   },
   "OntwikkelbareBedrijvenzone.voorzieneUitgifte": {
-    "template_type": "text",
+    "template_type": "date",
     "template_key": "VoorzieneUitgifte"
   }
 }

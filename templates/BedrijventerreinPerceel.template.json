@@ -94,6 +94,11 @@
     "template_key":"Id_BedrijventerreinPerceel"
   }
   },
+    "Bedrijventerreinperceel.inGebruik":{
+    "template_type": "uri_gebruik",
+      "template_key":"Gebruik",
+      "template_base_uri":"https://data.vlaanderen.be/doc/conceptscheme/BedrijventerreinInGebruik"
+    },
   "Bedrijventerreinperceel.isDeelVan":{
     "template_type":"uri",
     "template_key":"Id_Bedrijventerrein", "template_base_uri":"https://bedrijventerreinen.vlaanderen.be/id/bedrijventerrein/"
