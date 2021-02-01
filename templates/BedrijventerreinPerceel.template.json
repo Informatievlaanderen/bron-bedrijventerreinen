@@ -1,129 +1,131 @@
 {
   "@context": "https://test.data.vlaanderen.be/doc/implementatiemodel/bedrijventerrein/kandidaatstandaard/2020-05-04/context/bedrijventerrein.jsonld",
-  "@type" : "Bedrijventerreinperceel",
-  "@id":
-{
-  "template_type": "uri",
-  "template_key": "Id_BedrijventerreinPerceel",
-  "template_base_uri": "https://bedrijventerreinen.vlaanderen.be/id/bedrijventerreinperceel/"
-},
-  "Bedrijventerreinperceel.aanbieder": {
-  "@type":"GeregistreerdeOrganisatie",
-    "GeregistreerdeOrganisatie.homepage": {
-    "template_type":"text",
-    "template_key":"AanbiederLink"
+  "@type": "Bedrijventerreinperceel",
+  "@id": {
+    "template_type": "uri",
+    "template_key": "Id_BedrijventerreinPerceel",
+    "template_base_uri": "https://bedrijventerreinen.vlaanderen.be/id/bedrijventerreinperceel/"
   },
+  "Bedrijventerreinperceel.aanbieder": {
+    "@type": "GeregistreerdeOrganisatie",
+    "GeregistreerdeOrganisatie.homepage": {
+      "template_type": "text",
+      "template_key": "AanbiederLink"
+    },
     "GeregistreerdeOrganisatie.registratie": {
-      "@type":"Identificator",
-      "Identificator.identificator":{
-    "template_type":"id",
-    "template_key":"AanbiederOndernemingsnummer"
-  }
+      "@type": "Identificator",
+      "Identificator.identificator": {
+        "template_type": "id",
+        "template_key": "AanbiederOndernemingsnummer"
+      }
     },
     "GeregistreerdeOrganisatie.wettelijkeNaam": {
-    "template_type":"languageText",
-    "template_key":"AanbiederOrganisaite"}
+      "template_type": "languageText",
+      "template_key": "AanbiederOrganisaite"
+    }
   },
-  "Bedrijventerreinperceel.bebouwing":{
-    "template_type":"uri",
-    "template_key":"Bebouwing", "template_base_uri":"https://data.vlaanderen.be/id/concept/BedrijventerreinBebouwing/"
+  "Bedrijventerreinperceel.bebouwing": {
+    "template_type": "uri",
+    "template_key": "Bebouwing",
+    "template_base_uri": "https://data.vlaanderen.be/id/concept/BedrijventerreinBebouwing/"
   },
-  "Bedrijventerreinperceel.beperking":  {
-    "template_type":"listOfUri",
-      "template_amount":4,
-    "template_key":"Beperking",
-    "template_base_uri":"https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/"
+  "Bedrijventerreinperceel.beperking": {
+    "template_type": "listOfUri",
+    "template_amount": 4,
+    "template_key": "Beperking",
+    "template_base_uri": "https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/"
   },
   "Bedrijventerreinperceel.beschikbaarheid": {
-    "template_type":"uri",
-    "template_key":"Beschikbaarheid",
-    "template_base_uri":"https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeschikbaarheid/"
+    "template_type": "uri",
+    "template_key": "Beschikbaarheid",
+    "template_base_uri": "https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeschikbaarheid/"
   },
-  "Bedrijventerreinperceel.inGebruik": {
-    "template_type":"uri",
-    "template_key":"Gebruik",
-    "template_base_uri":"https://data.vlaanderen.be/id/concept/BedrijventerreinInGebruik/"
-  },
-  "Bedrijventerreinperceel.functie": [{
-  "@type":"Functiewaarde",
-  "Functiewaarde.type":
+  "Bedrijventerreinperceel.functie": [
     {
-      "template_type":"uri",
-      "template_key":"Functie",
-      "template_base_uri":"https://data.vlaanderen.be/id/concept/BedrijventerreinperceelFunctie/"
+      "@type": "Functiewaarde",
+      "Functiewaarde.type": {
+        "template_type": "uri",
+        "template_key": "Functie",
+        "template_base_uri": "https://data.vlaanderen.be/id/concept/BedrijventerreinperceelFunctie/"
+      }
     }
   ],
   "Bedrijventerrein.geldigheidsperiode": {
-    "@type":"Periode",
+    "@type": "Periode",
     "Periode.begin": {
-    "template_type":"date",
-    "template_key":"Geldigheidsperiode_Begin"
-  },
+      "template_type": "date",
+      "template_key": "Geldigheidsperiode_Begin"
+    },
     "Periode.einde": {
-    "template_type":"date",
-    "template_key":"Geldigheidsperiode_Einde"
-  }
+      "template_type": "date",
+      "template_key": "Geldigheidsperiode_Einde"
+    }
   },
-  "Bedrijventerreinperceel.geometrie": [{
-       "@type":"RuimtelijkeEenheidGeometrie",
-       "RuimtelijkeEenheidGeometrie.default":{
-    "template_type":"boolean",
-    "template_key":"Geometrie_Default"
-  },
-
-       "RuimtelijkeEenheidGeometrie.geometrie": {
+  "Bedrijventerreinperceel.geometrie": [
+    {
+      "@type": "RuimtelijkeEenheidGeometrie",
+      "RuimtelijkeEenheidGeometrie.default": {
+        "template_type": "boolean",
+        "template_key": "Geometrie_Default"
+      },
+      "RuimtelijkeEenheidGeometrie.geometrie": {
         "@type": "Geometrie",
         "Geometrie.wkt": {
           "template_type": "text",
           "template_key": "WKT"
         }
       },
-       "RuimtelijkeEenheidGeometrie.methode":{
-    "template_type":"uri",
-    "template_key":"Geometrie_Methode", "template_base_uri":"https://data.vlaanderen.be/id/conceptscheme/2Dgeometriemethod/"
-  }
-  }],
+      "RuimtelijkeEenheidGeometrie.methode": {
+        "template_type": "uri",
+        "template_key": "Geometrie_Methode",
+        "template_base_uri": "https://data.vlaanderen.be/id/conceptscheme/2Dgeometriemethod/"
+      }
+    }
+  ],
   "Bedrijventerreinperceel.homepageAanbieding": {
-    "template_type":"text",
-    "template_key":"AanbiederLink"
+    "template_type": "text",
+    "template_key": "AanbiederLink"
   },
-  "Bedrijventerreinperceel.identificator":{
-    "@type":"Identificator",
+  "Bedrijventerreinperceel.identificator": {
+    "@type": "Identificator",
     "Identificator.identificator": {
-    "template_type":"id",
-    "template_key":"Id_BedrijventerreinPerceel"
-  }
+      "template_type": "id",
+      "template_key": "Id_BedrijventerreinPerceel"
+    }
   },
-    "Bedrijventerreinperceel.inGebruik":{
+  "Bedrijventerreinperceel.inGebruik": {
     "template_type": "uri_gebruik",
-      "template_key":"Gebruik",
-      "template_base_uri":"https://data.vlaanderen.be/doc/conceptscheme/BedrijventerreinInGebruik"
-    },
-  "Bedrijventerreinperceel.isDeelVan":{
-    "template_type":"uri",
-    "template_key":"Id_Bedrijventerrein", "template_base_uri":"https://bedrijventerreinen.vlaanderen.be/id/bedrijventerrein/"
+    "template_key": "Gebruik",
+    "template_base_uri": "https://data.vlaanderen.be/doc/conceptscheme/BedrijventerreinInGebruik"
   },
-  "Bedrijventerreinperceel.isGerelateerdAan":{
-    "template_type":"uri",
-    "template_key":"Id_OntwikkelbareBedrijvenzone", "template_base_uri":"https://bedrijventerreinen.vlaanderen.be/id/ontwikkelbarebedrijvenzone/"
+  "Bedrijventerreinperceel.isDeelVan": {
+    "template_type": "uri",
+    "template_key": "Id_Bedrijventerrein",
+    "template_base_uri": "https://bedrijventerreinen.vlaanderen.be/id/bedrijventerrein/"
+  },
+  "Bedrijventerreinperceel.isGerelateerdAan": {
+    "template_type": "uri",
+    "template_key": "Id_OntwikkelbareBedrijvenzone",
+    "template_base_uri": "https://bedrijventerreinen.vlaanderen.be/id/ontwikkelbarebedrijvenzone/"
   },
   "Bedrijventerreinperceel.oppervlakte": {
-     "@type":"RuimtelijkeEenheidOppervlakte",
-     "RuimtelijkeEenheidOppervlakte.officiëleOppervlakte":{
-    "template_type":"boolean",
-    "template_key":"OfficiëleOppervlakte"
-  },
-     "RuimtelijkeEenheidOppervlakte.oppervlakte": {
-       "@type":"KwantitatieveWaarde",
-       "KwantitatieveWaarde.standaardEenheid": "http://qudt.org/vocab/unit/M2",
-       "KwantitatieveWaarde.waarde":{
-    "template_type":"number",
-    "template_key":"Oppervlakte"
+    "@type": "RuimtelijkeEenheidOppervlakte",
+    "RuimtelijkeEenheidOppervlakte.officiëleOppervlakte": {
+      "template_type": "boolean",
+      "template_key": "OfficiëleOppervlakte"
+    },
+    "RuimtelijkeEenheidOppervlakte.oppervlakte": {
+      "@type": "KwantitatieveWaarde",
+      "KwantitatieveWaarde.standaardEenheid": "http://qudt.org/vocab/unit/M2",
+      "KwantitatieveWaarde.waarde": {
+        "template_type": "number",
+        "template_key": "Oppervlakte"
+      }
+    },
+    "RuimtelijkeEenheidOppervlakte.type": {
+      "template_type": "uri",
+      "template_key": "OppervlakteType",
+      "template_base_uri": "https://data.vlaanderen.be/id/concept/RuimtelijkeEenheidOppervlaktetype/"
+    }
   }
-     },
-     "RuimtelijkeEenheidOppervlakte.type":{
-    "template_type":"uri",
-    "template_key":"OppervlakteType", "template_base_uri":"https://data.vlaanderen.be/id/concept/RuimtelijkeEenheidOppervlaktetype/"
-  }
-     }
 }

@@ -16,8 +16,8 @@
       }
     },
     "GeregistreerdeOrganisatie.wettelijkeNaam": {
-        "template_type": "languageText",
-        "template_key": "AanspreekpuntOrganisatie"
+      "template_type": "languageText",
+      "template_key": "AanspreekpuntOrganisatie"
     }
   },
   "BeheerdeBedrijvenzone.digitaleBeheerder": {
@@ -100,15 +100,13 @@
       }
     },
     "GeregistreerdeOrganisatie.wettelijkeNaam": {
-
-        "template_type": "languageText",
-        "template_key": "JuridischHandhaverOrganisatie"
-
+      "template_type": "languageText",
+      "template_key": "JuridischHandhaverOrganisatie"
     }
   },
   "BeheerdeBedrijvenzone.naam": {
-      "template_type": "languageText",
-      "template_key": "Naam"
+    "template_type": "languageText",
+    "template_key": "Naam"
   },
   "BeheerdeBedrijvenzone.oppervlakte": {
     "@type": "RuimtelijkeEenheidOppervlakte",

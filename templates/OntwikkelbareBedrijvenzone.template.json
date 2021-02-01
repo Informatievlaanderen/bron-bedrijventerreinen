@@ -76,26 +76,28 @@
       "template_key": "OntwikkelaarOrganisatie"
     }
   },
-  "OntwikkelbareBedrijvenzone.oppervlakte": [{
-    "@type": "RuimtelijkeEenheidOppervlakte",
-    "RuimtelijkeEenheidOppervlakte.officiëleOppervlakte": {
-      "template_type": "boolean",
-      "template_key": "OfficiëleOppervlakte"
-    },
-    "RuimtelijkeEenheidOppervlakte.oppervlakte": {
-      "@type": "KwantitatieveWaarde",
-      "KwantitatieveWaarde.standaardEenheid": "http://qudt.org/vocab/unit/M2",
-      "KwantitatieveWaarde.waarde": {
-        "template_type": "number",
-        "template_key": "Oppervlakte"
+  "OntwikkelbareBedrijvenzone.oppervlakte": [
+    {
+      "@type": "RuimtelijkeEenheidOppervlakte",
+      "RuimtelijkeEenheidOppervlakte.officiëleOppervlakte": {
+        "template_type": "boolean",
+        "template_key": "OfficiëleOppervlakte"
+      },
+      "RuimtelijkeEenheidOppervlakte.oppervlakte": {
+        "@type": "KwantitatieveWaarde",
+        "KwantitatieveWaarde.standaardEenheid": "http://qudt.org/vocab/unit/M2",
+        "KwantitatieveWaarde.waarde": {
+          "template_type": "number",
+          "template_key": "Oppervlakte"
+        }
+      },
+      "RuimtelijkeEenheidOppervlakte.type": {
+        "template_type": "uri",
+        "template_key": "OppervlakteType",
+        "template_base_uri": "https://data.vlaanderen.be/id/concept/RuimtelijkeEenheidOppervlaktetype/"
       }
-    },
-    "RuimtelijkeEenheidOppervlakte.type": {
-      "template_type": "uri",
-      "template_key": "OppervlakteType",
-      "template_base_uri": "https://data.vlaanderen.be/id/concept/RuimtelijkeEenheidOppervlaktetype/"
     }
-  }],
+  ],
   "OntwikkelbareBedrijvenzone.statusOntwikkeling": {
     "template_type": "uri",
     "template_key": "StatusOntwikkeling",
