@@ -2,7 +2,7 @@ version: 2
 jobs:
   extract-csv:
     docker:
-      - image: geographica/gdal2:2.4.0 
+      - image: geographica/gdal2:2.4.0
     steps:
       - checkout
       - run:
@@ -16,7 +16,7 @@ jobs:
       - run:
           name: transform fileGDB to csv
           command: |
-            $PWD/scripts/geodb2csv.sh $PWD/bron-bedrijventerrein.gdb.zip bron-bedrijventerrein
+            $PWD/scripts/geodb2csv.sh $PWD/bron-bedrijventerrein.gdb.zip Aanbieders
       - run:
           name: List the files which have been created
           command: ls -al /tmp/workspace/*

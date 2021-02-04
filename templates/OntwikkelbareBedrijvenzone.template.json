@@ -3,8 +3,7 @@
   "@type": "OntwikkelbareBedrijvenzone",
   "@id": {
     "template_type": "uri",
-    "template_key": "Id_OntwikkelbareBedrijvenzone",
-    "template_base_uri": "https://bedrijventerreinen.vlaanderen.be/id/ontwikkelbarebedrijvenzone/"
+    "template_key": "URI_OntwikkelbareBedrijvenzone"
   },
   "OntwikkelbareBedrijvenzone.geldigheidsperiode": {
     "@type": "Periode",
@@ -26,22 +25,22 @@
       },
       "RuimtelijkeEenheidGeometrie.geometrie": {
         "@type": "Geometrie",
-        "Geometrie.gml": {
-          "template_type": "text",
-          "template_key": "Geometrie_Gml"
-        },
         "Geometrie.wkt": {
           "template_type": "text",
-          "template_key": "Geometrie_Wkt"
+          "template_key": "WKT"
         }
       },
       "RuimtelijkeEenheidGeometrie.methode": {
-        "template_type": "uri",
+        "template_type": "base_uri",
         "template_key": "Geometrie_Methode",
         "template_base_uri": "https://data.vlaanderen.be/id/conceptscheme/2Dgeometriemethod/"
       }
     }
   ],
+  "OntwikkelbareBedrijvenzone.homepage": {
+    "template_type": "text",
+    "template_key": "Homepage"
+  },
   "OntwikkelbareBedrijvenzone.identificator": {
     "@type": "Identificator",
     "Identificator.identificator": {
@@ -51,63 +50,42 @@
   },
   "OntwikkelbareBedrijvenzone.isDeelVan": {
     "template_type": "uri",
-    "template_key": "Id_Bedrijventerrein",
-    "template_base_uri": "https://bedrijventerreinen.vlaanderen.be/id/bedrijventerrein/"
+    "template_key": "URI_Bedrijventerrein"
   },
   "OntwikkelbareBedrijvenzone.naam": {
     "template_type": "languageText",
     "template_key": "Naam"
   },
   "OntwikkelbareBedrijvenzone.ontwikkelaar": {
-    "@type": "GeregistreerdeOrganisatie",
-    "GeregistreerdeOrganisatie.homepage": {
-      "template_type": "text",
-      "template_key": "OntwikkelaarHomepage"
+    "template_type": "wellknown_organisatie",
+    "template_key": "OntwikkelaarRegistratie"
+  },
+  "OntwikkelbareBedrijvenzone.oppervlakte": {
+    "@type": "RuimtelijkeEenheidOppervlakte",
+    "RuimtelijkeEenheidOppervlakte.officiëleOppervlakte": {
+      "template_type": "boolean",
+      "template_key": "OfficiëleOppervlakte"
     },
-    "GeregistreerdeOrganisatie.registratie": {
-      "@type": "Identificator",
-      "Identificator.identificator": {
-        "template_type": "id",
-        "template_key": "OntwikkelaarOndernemingsnummer"
+    "RuimtelijkeEenheidOppervlakte.oppervlakte": {
+      "@type": "KwantitatieveWaarde",
+      "KwantitatieveWaarde.standaardEenheid": "http://qudt.org/vocab/unit/M2",
+      "KwantitatieveWaarde.waarde": {
+        "template_type": "number",
+        "template_key": "Oppervlakte"
       }
     },
-    "GeregistreerdeOrganisatie.wettelijkeNaam": {
-      "template_type": "languageText",
-      "template_key": "OntwikkelaarOrganisatie"
+    "RuimtelijkeEenheidOppervlakte.type": {
+      "template_type": "base_uri",
+      "template_key": "OppervlakteType",
+      "template_base_uri": "https://data.vlaanderen.be/id/concept/RuimtelijkeEenheidOppervlaktetype/"
     }
   },
-  "OntwikkelbareBedrijvenzone.oppervlakte": [
-    {
-      "@type": "RuimtelijkeEenheidOppervlakte",
-      "RuimtelijkeEenheidOppervlakte.officiëleOppervlakte": {
-        "template_type": "boolean",
-        "template_key": "OfficiëleOppervlakte"
-      },
-      "RuimtelijkeEenheidOppervlakte.oppervlakte": {
-        "@type": "KwantitatieveWaarde",
-        "KwantitatieveWaarde.standaardEenheid": "http://qudt.org/vocab/unit/M2",
-        "KwantitatieveWaarde.waarde": {
-          "template_type": "number",
-          "template_key": "Oppervlakte"
-        }
-      },
-      "RuimtelijkeEenheidOppervlakte.type": {
-        "template_type": "uri",
-        "template_key": "OppervlakteType",
-        "template_base_uri": "https://data.vlaanderen.be/id/concept/RuimtelijkeEenheidOppervlaktetype/"
-      }
-    }
-  ],
   "OntwikkelbareBedrijvenzone.statusOntwikkeling": {
-    "template_type": "uri",
+    "template_type": "base_uri_lower",
     "template_key": "StatusOntwikkeling",
     "template_base_uri": "https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneOntwikkelingsstatus/"
   },
-  "OntwikkelbareBedrijvenzone.type": {
-    "template_type": "uri",
-    "template_key": "RuimtelijkeEenheidType",
-    "template_base_uri": "https://data.vlaanderen.be/id/concept/RuimtelijkeEenheidtype/"
-  },
+  "OntwikkelbareBedrijvenzone.type": "https://data.vlaanderen.be/id/concept/RuimtelijkeEenheidtype/ontwikkelbareBedrijvenzone",
   "OntwikkelbareBedrijvenzone.voorzieneUitgifte": {
     "template_type": "date",
     "template_key": "VoorzieneUitgifte"

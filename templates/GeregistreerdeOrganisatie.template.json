@@ -1,0 +1,49 @@
+{
+  "@context": "https://test.data.vlaanderen.be/doc/implementatiemodel/bedrijventerrein/kandidaatstandaard/2020-05-04/context/bedrijventerrein.jsonld",
+  "@type": "GeregistreerdeOrganisatie",
+  "@id": {
+    "template_type": "wellknown_organisatie",
+    "template_key": "Registratie"
+  },
+  "GeregistreerdeOrganisatie.homepage": {
+    "template_type": "text",
+    "template_key": "Homepage",
+    "template_filter_null": true
+  },
+  "GeregistreerdeOrganisatie.registratie": {
+    "@type": "Identificator",
+    "Identificator.gestructureerdeIdentificator": {
+      "@type": "GestructureerdeIdentificator",
+      "GestructureerdeIdentificator.lokaleIdentificator": {
+        "template_type": "id",
+        "template_key": "Registratie"
+      },
+      "GestructureerdeIdentificator.naamruimte": "https://kbopub.economie.fgov.be/"
+    }
+  },
+  "GeregistreerdeOrganisatie.wettelijkeNaam": {
+    "template_type": "languageText",
+    "template_key": "WettelijkeNaam"
+  },
+  "Agent.contactinfo": {
+    "@type": "Contactinfo",
+    "Contactinfo.email": {
+      "template_type": "text",
+      "template_key": "Email",
+      "template_filter_null": true,
+      "template_filter_regex":"([a-zA-Z0-9_\\-.]+)@\u200B?([a-zA-Z0-9_\\-.\\s]+)\\.([a-zA-Z]{2,5})"
+    },
+    "Contactinfo.telefoon": {
+      "template_type": "text",
+      "template_key": "Telefoon",
+      "template_filter_null": true,
+      "template_filter_regex":"[+]?[0-9(][0-9()/.\\s]{2,}[0-9)]"
+    },
+    "Contactinfo.website": {
+      "template_type": "text",
+      "template_key": "Homepage",
+      "template_filter_null": true
+    }
+  }
+}
+
