@@ -15,7 +15,7 @@
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeschikbaarheid>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeschikbaarheid> .
 
-<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeschikbaarheid/nietaangeboden> a skos:Concept;
+<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeschikbaarheid/nietAangeboden> a skos:Concept;
     skos:prefLabel "niet aangeboden"@nl;
     skos:definition "geen kennis van een actief aanbod."@nl;
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeschikbaarheid>;
