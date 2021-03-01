@@ -15,6 +15,7 @@
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinRuimtelijkeEenheidtype>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinRuimtelijkeEenheidtype> .
 
+
 <https://data.vlaanderen.be/id/concept/BedrijventerreinperceelRuimtelijkeEenheidtype/aktePerceel> a skos:Concept;
     skos:prefLabel "aktePerceel"@nl;
     skos:definition "Door een landmeter opgemeten percelenplan opgenomen in een notariële eigendomsakte."@nl;
