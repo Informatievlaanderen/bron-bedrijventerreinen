@@ -27,6 +27,11 @@
   "BeheerdeBedrijvenzone.geometrie": [
     {
       "@type": "RuimtelijkeEenheidGeometrie",
+      "@id": {
+        "template_type": "wellknown",
+        "template_known_type": "geometrie",
+        "template_key": "URI_BeheerdeBedrijvenzone"
+      },
       "RuimtelijkeEenheidGeometrie.default": {
         "template_type": "boolean",
         "template_key": "Geometrie_Default"
@@ -47,9 +52,14 @@
   ],
   "BeheerdeBedrijvenzone.identificator": {
     "@type": "Identificator",
+    "@id": {
+      "template_type": "wellknown",
+      "template_known_type": "identifier",
+      "template_key": "URI_BeheerdeBedrijvenzone"
+    },
     "Identificator.identificator": {
       "template_type": "id",
-      "template_key": "Id_Beheerdebedrijvenzone"
+      "template_key": "ID_BeheerdeBedrijvenzone"
     }
   },
   "BeheerdeBedrijvenzone.isDeelVan": {
@@ -61,11 +71,16 @@
     "template_key": "JuridischeHandhaverRegistratie"
   },
   "BeheerdeBedrijvenzone.naam": {
-      "template_type": "languageText",
-      "template_key": "Naam"
+    "template_type": "languageText",
+    "template_key": "Naam"
   },
   "BeheerdeBedrijvenzone.oppervlakte": {
     "@type": "RuimtelijkeEenheidOppervlakte",
+    "@id": {
+      "template_type": "wellknown",
+      "template_known_type": "oppervlakte",
+      "template_key": "URI_BeheerdeBedrijvenzone"
+    },
     "RuimtelijkeEenheidOppervlakte.officiëleOppervlakte": {
       "template_type": "boolean",
       "template_key": "OfficiëleOppervlakte"
@@ -86,12 +101,12 @@
   },
   "BeheerdeBedrijvenzone.subsidie": {
     "template_type": "boolean",
-    "template_key": "Subsidie"
+    "template_key": "MISSING"
   },
   "BeheerdeBedrijvenzone.type": "https://data.vlaanderen.be/id/concept/RuimtelijkeEenheidtype/beheerdeBedrijvenzone",
   "BeheerdeBedrijvenzone.voorzieneMiddelen": {
     "template_type": "base_uri",
-    "template_key": "Subsidie",
+    "template_key": "MISSING",
     "template_base_uri": "https://data.vlaanderen.be/doc/conceptscheme/BedrijvenzoneMiddelenOpenbaardomein/"
   }
 }

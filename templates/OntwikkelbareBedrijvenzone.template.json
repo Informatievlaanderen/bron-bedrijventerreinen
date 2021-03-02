@@ -19,6 +19,11 @@
   "OntwikkelbareBedrijvenzone.geometrie": [
     {
       "@type": "RuimtelijkeEenheidGeometrie",
+      "@id": {
+        "template_type": "wellknown",
+        "template_known_type": "geometrie",
+        "template_key": "URI_OntwikkelbareBedrijvenzone"
+      },
       "RuimtelijkeEenheidGeometrie.default": {
         "template_type": "boolean",
         "template_key": "Geometrie_Default"
@@ -43,9 +48,13 @@
   },
   "OntwikkelbareBedrijvenzone.identificator": {
     "@type": "Identificator",
+    "@id": {  "template_type": "wellknown",
+      "template_known_type": "identifier",
+      "template_key": "URI_OntwikkelbareBedrijvenzone"
+    },
     "Identificator.identificator": {
       "template_type": "id",
-      "template_key": "Id_OntwikkelbareBedrijvenzone"
+      "template_key": "ID_OntwikkelbareBedrijvenzone"
     }
   },
   "OntwikkelbareBedrijvenzone.isDeelVan": {
@@ -62,6 +71,11 @@
   },
   "OntwikkelbareBedrijvenzone.oppervlakte": {
     "@type": "RuimtelijkeEenheidOppervlakte",
+    "@id": {
+      "template_type": "wellknown",
+      "template_known_type": "oppervlakte",
+      "template_key": "URI_OntwikkelbareBedrijvenzone"
+    },
     "RuimtelijkeEenheidOppervlakte.officiëleOppervlakte": {
       "template_type": "boolean",
       "template_key": "OfficiëleOppervlakte"

@@ -39,6 +39,11 @@
   "Bedrijventerreinperceel.geometrie": [
     {
       "@type": "RuimtelijkeEenheidGeometrie",
+      "@id": {
+        "template_type": "wellknown",
+        "template_known_type": "geometrie",
+        "template_key": "URI_Bedrijventerreinperceel"
+      },
       "RuimtelijkeEenheidGeometrie.default": {
         "template_type": "boolean",
         "template_key": "Geometrie_Default"
@@ -59,9 +64,14 @@
   ],
   "Bedrijventerreinperceel.identificator": {
     "@type": "Identificator",
+    "@id": {
+      "template_type": "wellknown",
+      "template_known_type": "identifier",
+      "template_key": "URI_Bedrijventerreinperceel"
+    },
     "Identificator.identificator": {
       "template_type": "id",
-      "template_key": "Id_BedrijventerreinPerceel"
+      "template_key": "ID_Bedrijventerreinperceel"
     }
   },
   "Bedrijventerreinperceel.inGebruik": {
@@ -85,6 +95,11 @@
   },
   "Bedrijventerreinperceel.oppervlakte": {
     "@type": "RuimtelijkeEenheidOppervlakte",
+    "@id": {
+      "template_type": "wellknown",
+      "template_known_type": "oppervlakte",
+      "template_key": "URI_Bedrijventerreinperceel"
+    },
     "RuimtelijkeEenheidOppervlakte.officiëleOppervlakte": {
       "template_type": "boolean",
       "template_key": "OfficiëleOppervlakte"
@@ -105,7 +120,7 @@
   },
   "Bedrijventerreinperceel.type": {
     "template_type": "base_uri",
-    "template_key": "RuimtelijkeEenheidType",
+    "template_key": "MISSING",
     "template_base_uri": "https://data.vlaanderen.be/id/concept/RuimtelijkeEenheidtype/"
   }
 }

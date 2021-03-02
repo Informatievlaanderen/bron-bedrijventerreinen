@@ -12,6 +12,11 @@
   },
   "GeregistreerdeOrganisatie.registratie": {
     "@type": "Identificator",
+    "@id": {
+      "template_type": "wellknown",
+      "template_known_type": "identifier",
+      "template_key": "Registratie"
+    },
     "Identificator.gestructureerdeIdentificator": {
       "@type": "GestructureerdeIdentificator",
       "GestructureerdeIdentificator.lokaleIdentificator": {

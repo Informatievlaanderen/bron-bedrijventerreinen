@@ -10,7 +10,8 @@
     "template_base_uri" : "https://bedrijventerrein.vlaanderen.be/id/bedrijventerreinperceel/OVO000039/"
   },
   "Bedrijventerreinperceel.aanbieder": {
-    "template_type": "wellknown_organisatie",
+    "template_type": "wellknown",
+    "template_known_type": "organisatie",
     "template_key": "AanbiederRegistratie"
   },
   "Bedrijventerreinperceel.homepageAanbieding": {
