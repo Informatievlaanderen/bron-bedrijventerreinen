@@ -4,7 +4,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
 
-<https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinInGebruik> a skos:ConceptScheme;
+<https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelInGebruik> a skos:ConceptScheme;
   skos:definition """'In gebruik' kan zowel slaan op economische als op niet-economische activiteiten, b.v. een bewoond woonhuis, een bewerkt landbouwperceel,…
     Bedrijfsverzamelgebouwen zijn steeds 'in gebruik' en ' aangeboden'. (Zie ook de puntenlaag bedrijfsverzamelgebouwen in hoofdstuk 10.)"""@nl;
   skos:prefLabel "BedrijventerreinInGebruik"@nl.
@@ -15,6 +15,7 @@
     skos:definition "Indien minstens 50% van het perceel of gebouw in gebruik is"@nl;
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinInGebruik>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinInGebruik> .
+
 
 <https://data.vlaanderen.be/id/concept/BedrijventerreinInGebruik/nietInGebruik> a skos:Concept;
     skos:prefLabel "niet in gebruik"@nl;

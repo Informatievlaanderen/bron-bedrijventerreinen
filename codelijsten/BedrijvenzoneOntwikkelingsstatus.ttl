@@ -4,38 +4,38 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
 
-<https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneOntwikkelingsstatus> a skos:ConceptScheme;
+<https://data.vlaanderen.be/id/conceptscheme/OntwikkelbareBedrijvenzoneOntwikkelingsstatus> a skos:ConceptScheme;
   skos:definition "De status waarin de ontwikkeling van een bedrijvenzone zich bevindt."@nl;
   skos:prefLabel "BedrijvenzoneOntwikkelingsstatus"@nl.
 
 
-<https://data.vlaanderen.be/id/concept/BedrijvenzoneOntwikkelingsstatus/teontwikkelen> a skos:Concept;
+<https://data.vlaanderen.be/id/concept/OntwikkelbareBedrijvenzoneOntwikkelingsstatus/teOntwikkelen> a skos:Concept;
     skos:prefLabel "te ontwikkelen"@nl;
     skos:definition "De bedrijvenzone bevindt zich in de periode tussen de definitieve bestemming van een bedrijvenzone tot de start van de grondverwerving"@nl;
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneOntwikkelingsstatus>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneOntwikkelingsstatus> .
 
-<https://data.vlaanderen.be/id/concept/BedrijvenzoneOntwikkelingsstatus/inontwikkeling> a skos:Concept;
+<https://data.vlaanderen.be/id/concept/OntwikkelbareBedrijvenzoneOntwikkelingsstatus/inOntwikkeling> a skos:Concept;
     skos:prefLabel "in ontwikkeling"@nl;
     skos:definition "De bedrijvenzone bevindt zich in de periode tussen de start van de grondverwerving tot de oplevering van de nutsvoorzieningen en infrastructuur van een bedrijvenzone."@nl;
     rdfs:comment "Start van de grondverwerving is het moment waarop het beheersorgaan van de organisatie de beslissing neemt tot aankoop/onteigening van de eerste kavel."@nl;
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneOntwikkelingsstatus>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneOntwikkelingsstatus> .
 
-<https://data.vlaanderen.be/id/concept/BedrijvenzoneOntwikkelingsstatus/ontwikkeld> a skos:Concept;
+<https://data.vlaanderen.be/id/concept/OntwikkelbareBedrijvenzoneOntwikkelingsstatus/ontwikkeld> a skos:Concept;
     skos:prefLabel "ontwikkeld"@nl;
     skos:definition "De bedrijvenzone bevindt zich in de periode na de oplevering van de nutsvoorzieningen en infrastructuur van een bedrijvenzone."@nl;
     rdfs:comment "De uitgifte van kavels kan zowel tijdens de fase te ontwikkelen, in ontwikkelen als ontwikkeld."@nl;
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneOntwikkelingsstatus>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneOntwikkelingsstatus> .
 
-<https://data.vlaanderen.be/id/concept/BedrijvenzoneOntwikkelingsstatus/ontwikkelinggeblokkeerd> a skos:Concept;
+<https://data.vlaanderen.be/id/concept/OntwikkelbareBedrijvenzoneOntwikkelingsstatus/ontwikkelingGeblokkeerd> a skos:Concept;
     skos:prefLabel "ontwikkeling geblokkeerd"@nl;
     skos:definition "De bedrijvenzone bevindt zich in de toestand die gehypothekeerd wordt door één of meerdere structurele, procedurele en/of andere knelpunten/beperkingen"@nl;
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneOntwikkelingsstatus>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneOntwikkelingsstatus> .
 
-<https://data.vlaanderen.be/id/concept/BedrijvenzoneOntwikkelingsstatus/nietontwikkelbaar> a skos:Concept;
+<https://data.vlaanderen.be/id/concept/OntwikkelbareBedrijvenzoneOntwikkelingsstatus/nietontwikkelbaar> a skos:Concept;
     skos:prefLabel "niet ontwikkelbaar"@nl;
     skos:definition "De bedrijvenzone bevindt zich in een toestand waarvan vrijwel met zekerheid kan worden gezegd dat zij nooit zullen worden geactiveerd als economische ruimte omdat zij grotendeels of volledig in gebruik zijn voor andere functies, belast met allerlei infrastructuren of omwille van hun ligging niet meer aangewezen zijn voor een economische ontwikkeling."@nl;
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneOntwikkelingsstatus>;

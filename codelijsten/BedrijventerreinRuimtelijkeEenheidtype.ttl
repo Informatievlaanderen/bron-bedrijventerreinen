@@ -4,24 +4,25 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
 
-<https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinRuimtelijkeEenheidtype> a skos:ConceptScheme;
+<https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelRuimtelijkeEenheidtype> a skos:ConceptScheme;
   skos:definition "De verschillende types van ruimtelijke eenheden"@nl;
   skos:prefLabel "BedrijventerreinRuimtelijkeEenheidtype"@nl.
 
 
-<https://data.vlaanderen.be/id/concept/BedrijventerreinRuimtelijkeEenheidtype/gebruiksPerceel> a skos:Concept;
+<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelRuimtelijkeEenheidtype/gebruiksPerceel> a skos:Concept;
     skos:prefLabel "gebruiksPerceel"@nl;
     skos:definition "Een bedrijventerreingebruiksperceel is een ruimtelijke eenheid binnen een bedrijventerrein met eenzelfde gebruik, functie of eigenaar."@nl;
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinRuimtelijkeEenheidtype>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinRuimtelijkeEenheidtype> .
 
-<https://data.vlaanderen.be/id/concept/BedrijventerreinRuimtelijkeEenheidtype/aktePerceel> a skos:Concept;
+
+<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelRuimtelijkeEenheidtype/aktePerceel> a skos:Concept;
     skos:prefLabel "aktePerceel"@nl;
     skos:definition "Door een landmeter opgemeten percelenplan opgenomen in een notariële eigendomsakte."@nl;
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinRuimtelijkeEenheidtype>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinRuimtelijkeEenheidtype> .
 
-<https://data.vlaanderen.be/id/concept/BedrijventerreinRuimtelijkeEenheidtype/kadastraalPlanPerceel> a skos:Concept;
+<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelRuimtelijkeEenheidtype/kadastraalPlanPerceel> a skos:Concept;
     skos:prefLabel "kadastraalPlanPerceel"@nl;
     skos:definition "Een gedeelte van het Belgische grondgebied, geografische afgebakend en geïdentificeerd door de AAPD op het kadastraal percelenplan, dat overeenstemt met het grondoppervlak van één of meerdere kadastrale patrimoniale percelen."@nl;
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinRuimtelijkeEenheidtype>;
