@@ -2,7 +2,8 @@
   "@context": "https://test.data.vlaanderen.be/doc/implementatiemodel/bedrijventerrein/kandidaatstandaard/2020-05-04/context/bedrijventerrein.jsonld",
   "@type": "GeregistreerdeOrganisatie",
   "@id": {
-    "template_type": "wellknown_organisatie",
+    "template_type": "wellknown",
+    "template_known_type": "organisatie",
     "template_key": "Registratie"
   },
   "GeregistreerdeOrganisatie.homepage": {
