@@ -10,7 +10,7 @@
     "template_base_uri" : "https://bedrijventerrein.vlaanderen.be/id/bedrijventerreinperceel/OVO000039/"
   },
   "Bedrijventerreinperceel.beperking": {
-    "template_type": "base_uri_beperking",
+    "template_type": "base_uri",
     "template_amount": 4,
     "template_key": "Beperking",
     "template_base_uri": "https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/"

@@ -96,7 +96,7 @@
     }
   },
   "OntwikkelbareBedrijvenzone.statusOntwikkeling": {
-    "template_type": "base_uri_lower",
+    "template_type": "base_uri",
     "template_key": "StatusOntwikkeling",
     "template_base_uri": "https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneOntwikkelingsstatus/"
   },

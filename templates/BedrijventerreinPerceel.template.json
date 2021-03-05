@@ -11,7 +11,7 @@
     "template_base_uri": "https://data.vlaanderen.be/id/concept/BedrijventerreinBebouwing/"
   },
   "Bedrijventerreinperceel.beschikbaarheid": {
-    "template_type": "base_uri_camel_lower",
+    "template_type": "base_uri_camel",
     "template_key": "Beschikbaarheid",
     "template_base_uri": "https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeschikbaarheid/"
   },
@@ -19,7 +19,7 @@
     {
       "@type": "Functiewaarde",
       "Functiewaarde.type": {
-        "template_type": "base_uri_lower",
+        "template_type": "base_uri",
         "template_key": "Functie",
         "template_base_uri": "https://data.vlaanderen.be/id/concept/BedrijventerreinperceelFunctie/"
       }
@@ -75,7 +75,7 @@
     }
   },
   "Bedrijventerreinperceel.inGebruik": {
-    "template_type": "base_uri_gebruik",
+    "template_type": "base_uri",
     "template_key": "InGebruik",
     "template_base_uri": "https://data.vlaanderen.be/doc/conceptscheme/BedrijventerreinInGebruik/"
   },
