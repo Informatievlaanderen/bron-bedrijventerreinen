@@ -1,8 +1,17 @@
 {
-  "@context": "https://test.data.vlaanderen.be/doc/implementatiemodel/bedrijventerrein/kandidaatstandaard/2020-05-04/context/bedrijventerrein.jsonld",
+  "@context": [
+    "https://test.data.vlaanderen.be/doc/implementatiemodel/bedrijventerrein/kandidaatstandaard/2020-05-04/context/bedrijventerrein.jsonld",
+    {
+      "uuid": "http://mu.semte.ch/vocabularies/core/uuid"
+    }
+  ],
   "@type": "BeheerdeBedrijvenzone",
   "@id": {
     "template_type": "uri",
+    "template_key": "URI_BeheerdeBedrijvenzone"
+  },
+  "uuid": {
+    "template_type": "uuid",
     "template_key": "URI_BeheerdeBedrijvenzone"
   },
   "BeheerdeBedrijvenzone.aanspreekpunt": {
@@ -17,6 +26,9 @@
   },
   "BeheerdeBedrijvenzone.geldigheidsperiode": {
     "@type": "Periode",
+    "uuid": {
+      "template_type": "uuid"
+    },
     "Periode.begin": {
       "template_type": "date",
       "template_key": "Geldigheidsperiode_Begin"
@@ -34,12 +46,20 @@
         "template_known_type": "geometrie",
         "template_key": "URI_BeheerdeBedrijvenzone"
       },
+      "uuid": {
+        "template_type": "wellknown_uuid",
+        "template_known_type": "geometrie",
+        "template_key": "URI_BeheerdeBedrijvenzone"
+      },
       "RuimtelijkeEenheidGeometrie.default": {
         "template_type": "boolean",
         "template_key": "Geometrie_Default"
       },
       "RuimtelijkeEenheidGeometrie.geometrie": {
         "@type": "Geometrie",
+        "uuid": {
+          "template_type": "uuid"
+        },
         "Geometrie.wkt": {
           "template_type": "text",
           "template_key": "WKT"
@@ -56,6 +76,11 @@
     "@type": "Identificator",
     "@id": {
       "template_type": "wellknown",
+      "template_known_type": "identifier",
+      "template_key": "URI_BeheerdeBedrijvenzone"
+    },
+    "uuid": {
+      "template_type": "wellknown_uuid",
       "template_known_type": "identifier",
       "template_key": "URI_BeheerdeBedrijvenzone"
     },
@@ -84,12 +109,20 @@
       "template_known_type": "oppervlakte",
       "template_key": "URI_BeheerdeBedrijvenzone"
     },
+    "uuid": {
+      "template_type": "wellknown_uuid",
+      "template_known_type": "oppervlakte",
+      "template_key": "URI_BeheerdeBedrijvenzone"
+    },
     "RuimtelijkeEenheidOppervlakte.officiëleOppervlakte": {
       "template_type": "boolean",
       "template_key": "OfficiëleOppervlakte"
     },
     "RuimtelijkeEenheidOppervlakte.oppervlakte": {
       "@type": "KwantitatieveWaarde",
+      "uuid": {
+        "template_type": "uuid"
+      },
       "KwantitatieveWaarde.standaardEenheid": "http://qudt.org/vocab/unit/M2",
       "KwantitatieveWaarde.waarde": {
         "template_type": "number",

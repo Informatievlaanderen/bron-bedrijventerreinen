@@ -1,8 +1,18 @@
 {
-  "@context": "https://test.data.vlaanderen.be/doc/implementatiemodel/bedrijventerrein/kandidaatstandaard/2020-05-04/context/bedrijventerrein.jsonld",
+  "@context": [
+    "https://test.data.vlaanderen.be/doc/implementatiemodel/bedrijventerrein/kandidaatstandaard/2020-05-04/context/bedrijventerrein.jsonld",
+    {
+      "uuid": "http://mu.semte.ch/vocabularies/core/uuid"
+    }
+  ],
   "@type": "GeregistreerdeOrganisatie",
   "@id": {
     "template_type": "wellknown",
+    "template_known_type": "organisatie",
+    "template_key": "Registratie"
+  },
+  "uuid": {
+    "template_type": "wellknown_uuid",
     "template_known_type": "organisatie",
     "template_key": "Registratie"
   },
@@ -18,8 +28,16 @@
       "template_known_type": "identifier",
       "template_key": "Registratie"
     },
+    "uuid": {
+      "template_type": "wellknown_uuid",
+      "template_known_type": "identifier",
+      "template_key": "Registratie"
+    },
     "Identificator.gestructureerdeIdentificator": {
       "@type": "GestructureerdeIdentificator",
+      "uuid": {
+        "template_type": "uuid"
+      },
       "GestructureerdeIdentificator.lokaleIdentificator": {
         "template_type": "id",
         "template_key": "Registratie"
@@ -33,17 +51,20 @@
   },
   "Agent.contactinfo": {
     "@type": "Contactinfo",
+    "uuid": {
+      "template_type": "uuid"
+    },
     "Contactinfo.email": {
       "template_type": "text",
       "template_key": "Email",
       "template_filter_null": true,
-      "template_filter_regex":"([a-zA-Z0-9_\\-.]+)@\u200B?([a-zA-Z0-9_\\-.\\s]+)\\.([a-zA-Z]{2,5})"
+      "template_filter_regex": "([a-zA-Z0-9_\\-.]+)@\u200B?([a-zA-Z0-9_\\-.\\s]+)\\.([a-zA-Z]{2,5})"
     },
     "Contactinfo.telefoon": {
       "template_type": "text",
       "template_key": "Telefoon",
       "template_filter_null": true,
-      "template_filter_regex":"[+]?[0-9(][0-9()/.\\s]{2,}[0-9)]"
+      "template_filter_regex": "[+]?[0-9(][0-9()/.\\s]{2,}[0-9)]"
     },
     "Contactinfo.website": {
       "template_type": "text",
