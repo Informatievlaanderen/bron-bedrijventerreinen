@@ -7,11 +7,8 @@
   ],
   "@type": "Bedrijventerreinperceel",
   "@id": {
-    "should be  template_type": "uri",
-    "should be  template_key": "URI_Bedrijventerreinperceel",
-    "template_type": "base_uri",
-    "template_key": "ID_Bedrijventerreinperceel",
-    "template_base_uri": "https://bedrijventerrein.vlaanderen.be/id/bedrijventerreinperceel/OVO000039/"
+    "template_type": "uri",
+    "template_key": "URI_Bedrijventerreinperceel"
   },
   "Bedrijventerreinperceel.aanbieder": {
     "template_type": "wellknown",

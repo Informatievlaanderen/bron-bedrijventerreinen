@@ -137,7 +137,7 @@
   },
   "Bedrijventerrein.type": {
     "template_type": "base_uri",
-    "template_key": "MISSING",
+    "template_key": "RuimtelijkeEenheidType",
     "template_base_uri": "https://data.vlaanderen.be/id/concept/RuimtelijkeEenheidtype/"
   }
 }

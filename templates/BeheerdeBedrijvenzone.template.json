@@ -139,7 +139,11 @@
     "template_type": "boolean",
     "template_key": "MISSING"
   },
-  "BeheerdeBedrijvenzone.type": "https://data.vlaanderen.be/id/concept/RuimtelijkeEenheidtype/beheerdeBedrijvenzone",
+  "BeheerdeBedrijvenzone.type": {
+    "template_type": "base_uri",
+    "template_key": "RuimtelijkeEenheidType",
+    "template_base_uri": "https://data.vlaanderen.be/id/concept/RuimtelijkeEenheidtype/"
+  },
   "BeheerdeBedrijvenzone.voorzieneMiddelen": {
     "template_type": "base_uri",
     "template_key": "MISSING",

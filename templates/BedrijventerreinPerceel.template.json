@@ -149,14 +149,14 @@
       }
     },
     "RuimtelijkeEenheidOppervlakte.type": {
-      "template_type": "base_uri",
+        "template_type": "base_uri",
       "template_key": "OppervlakteType",
       "template_base_uri": "https://data.vlaanderen.be/id/concept/RuimtelijkeEenheidOppervlaktetype/"
     }
   },
   "Bedrijventerreinperceel.type": {
     "template_type": "base_uri",
-    "template_key": "MISSING",
+    "template_key": "RuimtelijkeEenheidType",
     "template_base_uri": "https://data.vlaanderen.be/id/concept/RuimtelijkeEenheidtype/"
   }
 }

@@ -134,7 +134,11 @@
     "template_key": "StatusOntwikkeling",
     "template_base_uri": "https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneOntwikkelingsstatus/"
   },
-  "OntwikkelbareBedrijvenzone.type": "https://data.vlaanderen.be/id/concept/RuimtelijkeEenheidtype/ontwikkelbareBedrijvenzone",
+  "OntwikkelbareBedrijvenzone.type": {
+    "template_type": "base_uri",
+    "template_key": "RuimtelijkeEenheidType",
+    "template_base_uri": "https://data.vlaanderen.be/id/concept/RuimtelijkeEenheidtype/"
+  },
   "OntwikkelbareBedrijvenzone.voorzieneUitgifte": {
     "template_type": "date",
     "template_key": "VoorzieneUitgifte"
