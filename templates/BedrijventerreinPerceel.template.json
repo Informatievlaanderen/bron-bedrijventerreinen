@@ -156,7 +156,7 @@
   },
   "Bedrijventerreinperceel.type": {
     "template_type": "base_uri",
-    "template_key": "RuimtelijkeEenheidType",
+    "template_key": "RuimtelijkeEenheidtype",
     "template_base_uri": "https://data.vlaanderen.be/id/concept/RuimtelijkeEenheidtype/"
   }
 }
