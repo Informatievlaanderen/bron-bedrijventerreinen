@@ -58,7 +58,7 @@
       "RuimtelijkeEenheidGeometrie.methode": {
         "template_type": "base_uri",
         "template_key": "Geometrie_Methode",
-        "template_base_uri": "https://data.vlaanderen.be/id/conceptscheme/2Dgeometriemethod/"
+        "template_base_uri": "https://data.vlaanderen.be/id/concept/2Dgeometriemethode/"
       }
     }
   ],
@@ -132,7 +132,7 @@
   "OntwikkelbareBedrijvenzone.statusOntwikkeling": {
     "template_type": "base_uri",
     "template_key": "StatusOntwikkeling",
-    "template_base_uri": "https://data.vlaanderen.be/id/conceptscheme/BedrijvenzoneOntwikkelingsstatus/"
+    "template_base_uri": "https://data.vlaanderen.be/id/concept/BedrijvenzoneOntwikkelingsstatus/"
   },
   "OntwikkelbareBedrijvenzone.type": {
     "template_type": "base_uri",

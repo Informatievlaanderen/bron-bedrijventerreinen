@@ -77,7 +77,7 @@
       "RuimtelijkeEenheidGeometrie.methode": {
         "template_type": "base_uri",
         "template_key": "Geometrie_Methode",
-        "template_base_uri": "https://data.vlaanderen.be/id/conceptscheme/2Dgeometriemethod/"
+        "template_base_uri": "https://data.vlaanderen.be/id/concept/2Dgeometriemethode/"
       }
     }
   ],

@@ -81,7 +81,7 @@
       "RuimtelijkeEenheidGeometrie.methode": {
         "template_type": "base_uri",
         "template_key": "Geometrie_Methode",
-        "template_base_uri": "https://data.vlaanderen.be/id/conceptscheme/2Dgeometriemethod/"
+        "template_base_uri": "https://data.vlaanderen.be/id/concept/2Dgeometriemethode/"
       }
     }
   ],
@@ -105,7 +105,7 @@
   "Bedrijventerreinperceel.inGebruik": {
     "template_type": "base_uri",
     "template_key": "InGebruik",
-    "template_base_uri": "https://data.vlaanderen.be/doc/conceptscheme/BedrijventerreinInGebruik/"
+    "template_base_uri": "https://data.vlaanderen.be/id/concept/BedrijventerreinInGebruik/"
   },
   "Bedrijventerreinperceel.isDeelVan": {
     "template_type": "uri",

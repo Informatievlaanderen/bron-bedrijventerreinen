@@ -68,7 +68,7 @@
       "RuimtelijkeEenheidGeometrie.methode": {
         "template_type": "base_uri",
         "template_key": "Geometrie_Methode",
-        "template_base_uri": "https://data.vlaanderen.be/id/conceptscheme/2Dgeometriemethod/"
+        "template_base_uri": "https://data.vlaanderen.be/id/concept/2Dgeometriemethode/"
       }
     }
   ],
@@ -86,7 +86,7 @@
     },
     "Identificator.identificator": {
       "template_type": "id",
-      "template_key": "ID_BeheerdeBedrijvenzone"
+      "template_key": "URI_BeheerdeBedrijvenzone"
     }
   },
   "BeheerdeBedrijvenzone.isDeelVan": {
@@ -135,18 +135,9 @@
       "template_base_uri": "https://data.vlaanderen.be/id/concept/RuimtelijkeEenheidOppervlaktetype/"
     }
   },
-  "BeheerdeBedrijvenzone.subsidie": {
-    "template_type": "boolean",
-    "template_key": "MISSING"
-  },
   "BeheerdeBedrijvenzone.type": {
     "template_type": "base_uri",
     "template_key": "RuimtelijkeEenheidType",
     "template_base_uri": "https://data.vlaanderen.be/id/concept/RuimtelijkeEenheidtype/"
-  },
-  "BeheerdeBedrijvenzone.voorzieneMiddelen": {
-    "template_type": "base_uri",
-    "template_key": "MISSING",
-    "template_base_uri": "https://data.vlaanderen.be/doc/conceptscheme/BedrijvenzoneMiddelenOpenbaardomein/"
   }
 }
