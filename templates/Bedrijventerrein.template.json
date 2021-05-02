@@ -95,7 +95,7 @@
     },
     "Identificator.identificator": {
       "template_type": "id",
-      "template_key": "ID_Bedrijventerrein"
+      "template_key": "URI_Bedrijventerrein"
     }
   },
   "Bedrijventerrein.naam": {

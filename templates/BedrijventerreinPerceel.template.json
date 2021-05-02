@@ -99,7 +99,7 @@
     },
     "Identificator.identificator": {
       "template_type": "id",
-      "template_key": "ID_Bedrijventerreinperceel"
+      "template_key": "URI_Bedrijventerreinperceel"
     }
   },
   "Bedrijventerreinperceel.inGebruik": {

@@ -80,7 +80,7 @@
     },
     "Identificator.identificator": {
       "template_type": "id",
-      "template_key": "ID_OntwikkelbareBedrijvenzone"
+      "template_key": "URI_OntwikkelbareBedrijvenzone"
     }
   },
   "OntwikkelbareBedrijvenzone.isDeelVan": {
@@ -132,7 +132,8 @@
   "OntwikkelbareBedrijvenzone.statusOntwikkeling": {
     "template_type": "base_uri",
     "template_key": "StatusOntwikkeling",
-    "template_base_uri": "https://data.vlaanderen.be/id/concept/BedrijvenzoneOntwikkelingsstatus/"
+    "template_base_uri": "https://data.vlaanderen.be/id/concept/OntwikkelbareBedrijvenzoneOntwikkelingsstatus/"
+
   },
   "OntwikkelbareBedrijvenzone.type": {
     "template_type": "base_uri",
