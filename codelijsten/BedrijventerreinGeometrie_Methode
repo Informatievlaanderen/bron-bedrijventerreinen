@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://data.vlaanderen.be/id/concept/BedrijventerreinGeometrie_Methode/ingeschetst>
+    a skos:Concept ;
+    skos:definition "De objectgeometrie werd ingeschetst." ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinGeometrie_Methode> ;
+    skos:prefLabel "ingeschetst" ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinGeometrie_Methode> .
+
+<https://data.vlaanderen.be/id/concept/BedrijventerreinGeometrie_Methode/ingemeten>
+    a skos:Concept ;
+    skos:definition "De objectgeometrie werd ingemeten op het terrein." ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinGeometrie_Methode> ;
+    skos:prefLabel "ingemeten" ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinGeometrie_Methode> .
+
+<https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinGeometrie_Methode>
+    a skos:ConceptScheme ;
+    skos:definition "Codelijst voor de methode die aangeeft op welke manier de geometrie tot stand gekomen is" ;
+    skos:prefLabel "conceptscheme BedrijventerreinGeometrie_Methode" .
