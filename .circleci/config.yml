@@ -55,11 +55,11 @@ jobs:
   upload:
     docker:
       - image: circleci/python
-      steps:
-        - checkout
-        - attach_workspace:
-            at: /tmp/workspace
-        - run: bash scripts/azure.sh ${SAS_TOKEN}
+    steps:
+      - checkout
+      - attach_workspace:
+          at: /tmp/workspace
+      - run: bash scripts/azure.sh ${SAS_TOKEN}
 workflows:
   version: 2
   generate_documentation:
