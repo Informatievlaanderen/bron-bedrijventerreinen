@@ -5,10 +5,10 @@ OUTFILE=$2
 
 WORKDIR=/tmp/workspace
 
-
-cp ${FILE} ${WORKDIR}
 pushd ${WORKDIR}
-unzip ${FILE}
+wget ${FILE} -O temp.zip
+$ unzip temp.zip
+unzip temp.zip
 ogr2ogr -f CSV -lco GEOMETRY=AS_WKT -lco ENCODING=UTF-8 -skipfailures ${OUTFILE}.csv ${FILE}
 
 head -n 1 Bedrijventerreinperceel.csv > BedrijventerreinPerceel0.csv

@@ -1,4 +1,9 @@
 version: 2
+parameters:
+  image-tag:
+    type: string
+    default: "latest"
+
 jobs:
   extract-csv:
     docker:
@@ -16,17 +21,20 @@ jobs:
       - run:
           name: transform fileGDB to csv
           command: |
-            $PWD/scripts/geodb2csv.sh $PWD/bron-bedrijventerrein.gdb.zip Aanbieders
+            $PWD/scripts/geodb2csv.sh << pipeline.parameters.url >> BedrijventerreinUnusedInformation
       - run:
           name: List the files which have been created
           command: ls -al /tmp/workspace/*
+      - run:
+          name: Test correct number of files
+          command: test `ls | wc -l` -eq 20
       - persist_to_workspace:
           root: /tmp/workspace
           paths:
             - target/
   transform2RDF:
     docker:
-      - image: bertvannuffelen/any2jsonld:bedrijventerrein
+      - image: bertvannuffelen/any2jsonld:bedrijventerrein.1
     steps:
       - checkout
       - attach_workspace:
