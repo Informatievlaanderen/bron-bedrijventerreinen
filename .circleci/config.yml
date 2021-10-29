@@ -68,6 +68,6 @@ workflows:
       - transform2RDF:
           requires:
             - extract-csv
-      - create-artifact:
+      - upload:
           requires:
             - transform2RDF
