@@ -71,6 +71,10 @@ workflows:
       - transform2RDF:
           requires:
             - extract-csv
-      - upload:
+      - hold:
+          type: approval # presents manual approval button in the UI
           requires:
             - transform2RDF
+      - upload:
+          requires:
+            - hold
