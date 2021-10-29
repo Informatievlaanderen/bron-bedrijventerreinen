@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 parameters:
   url:
     type: string
@@ -20,7 +20,7 @@ jobs:
             apt-get update && apt-get install -y vim dbview unzip wget less
       - run:
           name: get remote file
-          command: wget << pipeline.parameters.url >> -O /tmp/workspace/data.zip
+          command: wget <<pipeline.parameters.url>> -O /tmp/workspace/data.zip
       - run:
           name: transform fileGDB to csv
           command: |
