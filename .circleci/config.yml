@@ -24,7 +24,7 @@ jobs:
       - run:
           name: transform fileGDB to csv
           command: |
-            $PWD/scripts/geodb2csv.sh data  BedrijventerreinPerceel
+            $PWD/scripts/geodb2csv.sh data  Bedrijventerreinperceel
       - run:
           name: List the files which have been created
           command: ls -al /tmp/workspace/*
