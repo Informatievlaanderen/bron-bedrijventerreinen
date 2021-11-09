@@ -1,6 +1,6 @@
 SHELL=/bin/bash
 WORKDIR=/tmp/workspace
-OUTPUT=${WORKDIR}/target/output
+OUTPUT=${WORKDIR}/output
 INPUT=${WORKDIR}/target
 TEMPLATE=${CIRCLE_WORKING_DIRECTORY}/templates
 

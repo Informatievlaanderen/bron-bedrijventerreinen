@@ -44,6 +44,7 @@ jobs:
       - run:
           name:
           command: |
+            mkdir -p /tmp/workspace/output
             touch /tmp/workspace/convertlog.log
       - run:
           name: convert all csv files
@@ -63,10 +64,11 @@ jobs:
       - persist_to_workspace:
           root: /tmp/workspace
           paths:
-            - target/
+            - output/
   upload:
     docker:
       - image: circleci/python
+    working_directory: /tmp/workspace/output
     steps:
       - checkout
       - attach_workspace:
