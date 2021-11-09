@@ -57,10 +57,12 @@ jobs:
           command: |
              cat /tmp/workspace/convert.log
              wc -l /tmp/workspace/convert.log
-             test `cat /tmp/workspace/convert.log | wc -l` -eq 76
+             test `cat /tmp/workspace/convert.log | wc -l` -eq 64
       - run:
           name: List the files which have been created
           command: ls -al /tmp/workspace/*
+      - store_artifacts:
+          path: /tmp/workspace/output
       - persist_to_workspace:
           root: /tmp/workspace
           paths:
