@@ -6,8 +6,15 @@ OUTFILE=$2
 WORKDIR=/tmp/workspace
 
 pushd ${WORKDIR}
-unzip ${FILE}
-ogr2ogr -f CSV -lco GEOMETRY=AS_WKT -lco ENCODING=UTF-8 -skipfailures ${OUTFILE}.csv ${FILE}
+
+# downloaded file has different names 
+# transfer it into a stable name for the script
+unzip ${FILE} -d tmp.gdb
+mkdir data.gdb
+TMPFILE=`ls -1 tmp.gdb/`
+mv tmp.gdb/${TMPFILE}/* data.gdb
+
+ogr2ogr -f CSV -lco GEOMETRY=AS_WKT -lco ENCODING=UTF-8 -skipfailures ${OUTFILE}.csv data.gdb
 
 head -n 1 Bedrijventerreinperceel.csv > BedrijventerreinPerceel0.csv
 head -n 1 Bedrijventerreinperceel.csv > BedrijventerreinPerceel1.csv
