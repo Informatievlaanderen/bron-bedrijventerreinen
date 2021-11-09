@@ -36,7 +36,7 @@ jobs:
             - target/
   transform2RDF:
     docker:
-      - image: bertvannuffelen/any2jsonld:bedrijventerreinen.1
+      - image: bertvannuffelen/any2jsonld:bedrijventerreinen.2
     steps:
       - checkout
       - attach_workspace:
