@@ -30,7 +30,7 @@ jobs:
           command: ls -al /tmp/workspace/*
       - run:
           name: Test correct number of files
-           command: ls | wc -l
+          command: ls | wc -l
       - run:
           name: Test correct number of files
           command: test `ls | wc -l` -eq 23
