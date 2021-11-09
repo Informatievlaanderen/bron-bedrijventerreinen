@@ -33,7 +33,7 @@ jobs:
           command: ls | wc -l
       - run:
           name: Test correct number of files
-          command: test `ls | wc -l` -eq 23
+          command: test `ls | wc -l` -eq 8
       - persist_to_workspace:
           root: /tmp/workspace
           paths:
