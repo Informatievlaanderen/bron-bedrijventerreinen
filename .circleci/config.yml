@@ -29,7 +29,7 @@ jobs:
           name: Test correct number of files
           command: |
             ls -al /tmp/workspace/target
-            test `ls /tmp/workspace/target | wc -l` -eq 19
+            test `ls /tmp/workspace/target | wc -l` -eq 20
       - persist_to_workspace:
           root: /tmp/workspace
           paths:
