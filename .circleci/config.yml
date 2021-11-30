@@ -28,8 +28,8 @@ jobs:
       - run:
           name: Test correct number of files
           command: |
-            test `ls /tmp/workspace/target | wc -l` -eq 19
             ls -al /tmp/workspace/target
+            test `ls /tmp/workspace/target | wc -l` -eq 19
       - persist_to_workspace:
           root: /tmp/workspace
           paths:
