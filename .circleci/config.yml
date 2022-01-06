@@ -3,6 +3,12 @@ parameters:
   url:
     type: string
     default: "latest"
+  file_count:
+    type: integer
+    default: 19
+  first_column_name:
+    type: string
+    default: "BeheerdeBedrijvenzone"
 
 jobs:
   extract-csv:
@@ -24,12 +30,12 @@ jobs:
       - run:
           name: transform fileGDB to csv
           command: |
-            $PWD/scripts/geodb2csv.sh data  Bedrijventerreinperceel
+            $PWD/scripts/geodb2csv.sh data  <<pipeline.parameters.first_column_name>>
       - run:
           name: Test correct number of files
           command: |
             ls -al /tmp/workspace/target
-            test `ls /tmp/workspace/target | wc -l` -eq 20
+            test `ls /tmp/workspace/target | wc -l` -eq <<pipeline.parameters.file_count>>
       - persist_to_workspace:
           root: /tmp/workspace
           paths:
