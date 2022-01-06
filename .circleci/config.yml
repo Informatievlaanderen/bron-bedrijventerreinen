@@ -5,7 +5,7 @@ parameters:
     default: "latest"
   file_count:
     type: integer
-    default: 19
+    default: 20
   first_column_name:
     type: string
     default: "BeheerdeBedrijvenzone"
