@@ -8,7 +8,7 @@ parameters:
     default: 21
   first_column_name:
     type: string
-    default: "BedrijventerreinPerceel"
+    default: "Bedrijventerreinperceel"
 
 jobs:
   extract-csv:
