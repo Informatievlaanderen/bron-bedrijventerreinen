@@ -5,10 +5,10 @@ parameters:
     default: "latest"
   file_count:
     type: integer
-    default: 21
+    default: 20
   first_column_name:
     type: string
-    default: "Unused"
+    default: "BedrijventerreinPerceel"
 
 jobs:
   extract-csv:
