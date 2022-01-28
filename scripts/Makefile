@@ -5,28 +5,28 @@ INPUT=${WORKDIR}/target
 TEMPLATE=${CIRCLE_WORKING_DIRECTORY}/templates
 
 ${WORKDIR}/Aanbieder.jsonld: ${INPUT}/BedrijventerreinperceelAanbieding.csv
-	node /app/csv-renderer.js -t ${TEMPLATE}/Aanbieder.template.json -i $< -o $@ >> /tmp/workspace/convert.log
+	node /app/csv-renderer.js -t ${TEMPLATE}/Aanbieder.template.json -i $< -o $@ >> /tmp/workspace/convert.log 2>&1
 
 ${WORKDIR}/Bedrijventerrein.jsonld: ${INPUT}/Bedrijventerrein.csv
-	node /app/csv-renderer.js -t ${TEMPLATE}/Bedrijventerrein.template.json -i $< -o $@ >> /tmp/workspace/convert.log
+	node /app/csv-renderer.js -t ${TEMPLATE}/Bedrijventerrein.template.json -i $< -o $@ >> /tmp/workspace/convert.log 2>&1
 
 ${WORKDIR}/BedrijventerreinPerceel.jsonld: ${INPUT}/BedrijventerreinPerceel.csv
-	node /app/csv-renderer.js -t ${TEMPLATE}/BedrijventerreinPerceel.template.json -i $< -o $@ >> /tmp/workspace/convert.log
+	node /app/csv-renderer.js -t ${TEMPLATE}/BedrijventerreinPerceel.template.json -i $< -o $@ >> /tmp/workspace/convert.log 2>&1
 
 ${WORKDIR}/BedrijventerreinPerceel%.jsonld: ${INPUT}/BedrijventerreinPerceel%.csv
-	node /app/csv-renderer.js -t ${TEMPLATE}/BedrijventerreinPerceel.template.json -i $< -o $@ >> /tmp/workspace/convert.log
+	node /app/csv-renderer.js -t ${TEMPLATE}/BedrijventerreinPerceel.template.json -i $< -o $@ >> /tmp/workspace/convert.log 2>&1
 
 ${WORKDIR}/BedrijventerreinperceelBeperking.jsonld: ${INPUT}/BedrijventerreinperceelBeperking.csv
-	node /app/csv-renderer.js -t ${TEMPLATE}/BedrijventerreinperceelBeperking.template.json -i $< -o $@ >> /tmp/workspace/convert.log
+	node /app/csv-renderer.js -t ${TEMPLATE}/BedrijventerreinperceelBeperking.template.json -i $< -o $@ >> /tmp/workspace/convert.log 2>&1
 
 ${WORKDIR}/BeheerdeBedrijvenzone.jsonld: ${INPUT}/BeheerdeBedrijvenzone.csv
-	node /app/csv-renderer.js -t ${TEMPLATE}/BeheerdeBedrijvenzone.template.json -i $< -o $@ >> /tmp/workspace/convert.log
+	node /app/csv-renderer.js -t ${TEMPLATE}/BeheerdeBedrijvenzone.template.json -i $< -o $@ >> /tmp/workspace/convert.log 2>&1
 
 ${WORKDIR}/GeregistreerdeOrganisatie.jsonld: ${INPUT}/GeregistreerdeOrganisatie.csv
-	node /app/csv-renderer.js -t ${TEMPLATE}/GeregistreerdeOrganisatie.template.json -i $< -o $@ >> /tmp/workspace/convert.log
+	node /app/csv-renderer.js -t ${TEMPLATE}/GeregistreerdeOrganisatie.template.json -i $< -o $@ >> /tmp/workspace/convert.log 2>&1
 
 ${WORKDIR}/OntwikkelbareBedrijvenzone.jsonld: ${INPUT}/OntwikkelbareBedrijvenzone.csv
-	node /app/csv-renderer.js -t ${TEMPLATE}/OntwikkelbareBedrijvenzone.template.json -i $< -o $@ >> /tmp/workspace/convert.log
+	node /app/csv-renderer.js -t ${TEMPLATE}/OntwikkelbareBedrijvenzone.template.json -i $< -o $@ >> /tmp/workspace/convert.log 2>&1
 
 
 
