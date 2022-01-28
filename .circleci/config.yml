@@ -5,10 +5,10 @@ parameters:
     default: "latest"
   file_count:
     type: integer
-    default: 20
+    default: 21
   first_column_name:
     type: string
-    default: "BeheerdeBedrijvenzone"
+    default: "Unused"
 
 jobs:
   extract-csv:
@@ -36,6 +36,8 @@ jobs:
           command: |
             ls -al /tmp/workspace/target
             test `ls /tmp/workspace/target | wc -l` -eq <<pipeline.parameters.file_count>>
+      - store_artifacts:
+          path: /tmp/workspace/target
       - persist_to_workspace:
           root: /tmp/workspace
           paths:
