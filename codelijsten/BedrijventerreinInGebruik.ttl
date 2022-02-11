@@ -7,7 +7,7 @@
 <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelInGebruik> a skos:ConceptScheme;
   skos:definition """'In gebruik' kan zowel slaan op economische als op niet-economische activiteiten, b.v. een bewoond woonhuis, een bewerkt landbouwperceel,…
     Bedrijfsverzamelgebouwen zijn steeds 'in gebruik' en ' aangeboden'. (Zie ook de puntenlaag bedrijfsverzamelgebouwen in hoofdstuk 10.)"""@nl;
-  skos:prefLabel "BedrijventerreinInGebruik"@nl.
+  skos:prefLabel "BedrijventerreinperceelInGebruik"@nl.
 
 
 <https://data.vlaanderen.be/id/concept/BedrijventerreinperceelInGebruik/inGebruik> a skos:Concept;
