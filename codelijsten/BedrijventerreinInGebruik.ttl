@@ -10,18 +10,18 @@
   skos:prefLabel "BedrijventerreinInGebruik"@nl.
 
 
-<https://data.vlaanderen.be/id/concept/BedrijventerreinInGebruik/inGebruik> a skos:Concept;
+<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelInGebruik/inGebruik> a skos:Concept;
     skos:prefLabel "in gebruik"@nl;
     skos:definition "Indien minstens 50% van het perceel of gebouw in gebruik is"@nl;
-    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinInGebruik>;
-    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinInGebruik> .
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelInGebruik>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelInGebruik> .
 
 
-<https://data.vlaanderen.be/id/concept/BedrijventerreinInGebruik/nietInGebruik> a skos:Concept;
+<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelInGebruik/nietInGebruik> a skos:Concept;
     skos:prefLabel "niet in gebruik"@nl;
     skos:definition "Indien minder dan 50% van het perceel of gebouw in gebruik is"@nl;
     skos:example "Leegstaand gebouw, braakliggende grond"@nl;
-    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinInGebruik>;
-    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinInGebruik> .
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelInGebruik>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelInGebruik> .
 
 
