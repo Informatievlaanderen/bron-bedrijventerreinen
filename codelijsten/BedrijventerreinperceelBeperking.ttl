@@ -68,12 +68,6 @@
 <https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/bevriezingDoorOverheid> a skos:Concept;
     skos:prefLabel "bevriezing door overheid"@nl;
     skos:definition "Het bedrijventerreinperceel is bevroren door een (hangende) maatregel of beslissing van overheidsinstantie."@nl;
-    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking>;
-    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking> .
-
-<https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/bevriezingDooroverheid> a skos:Concept;
-    skos:prefLabel "bevriezing door overheid"@nl;
-    skos:definition "Het bedrijventerreinperceel is bevroren door een (hangende) maatregel of beslissing van overheidsinstantie."@nl;
     skos:narrower <https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/bevriezingDoorOverheid_herzieningBestemming>;
     skos:narrower <https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/bevriezingDoorOverheid_juridischeProcedure>;
     skos:narrower <https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/bevriezingDoorOverheid_mobiliteitsproblematiek>;
@@ -84,22 +78,26 @@
 <https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/bevriezingDoorOverheid_herzieningBestemming> a skos:Concept;
     skos:prefLabel "herziening bestemming door overheid"@nl;
     skos:definition "Een overheidsinstantie heeft aangegeven dat ze de intentie heeft om een RUP op te stellen maar de procedure nog niet heeft gestart (opmaak MER, voorbereiding start- en procesnota, ... ). Door het uitblijven van het RUP wordt een mogelijke ontwikkeling geblokkeerd. "@l;
-    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking>.
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking/bevriezingDoorOverheid>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking/bevriezingDoorOverheid> .
 
 <https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/bevriezingDoorOverheid_juridischeProcedure> a skos:Concept;
     skos:prefLabel "juridische procedure door overheid"@nl;
     skos:definition "Van overheidswege wordt de omgevingsvergunning geweigerd waardoor de ontwikkeling van een perceel wordt geblokkeerd of in geval er door de Raad van State vergunningen worden vernietigd of geschorst of een RUP wordt geschorst. Een andere mogelijkheid waardoor een ontwikkeling kan vertraging oplopen is de noodzaak om tot onteigening over te gaan bij eigendomsverwerving (langlopende procedures)."@nl;
-    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking>.
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking/bevriezingDoorOverheid>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking/bevriezingDoorOverheid> .
 
 <https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/bevriezingDoorOverheid_mobiliteitsproblematiek> a skos:Concept;
     skos:prefLabel "mobiliteitsproblematiek door overheid"@nl;
     skos:definition "Een overheidsinstantie heeft de intentie om een bepaalde ontsluiting te voorzien of andere infrastructuurwerken uit te voeren die noodzakelijk zijn voor een ontwikkeling van een bedrijvenzone.  Ook wanneer de bedrijventerreinen moeilijk bereikbaar zijn en er studiewerk moet gebeuren rond verkeersknelpunten als gevolg van mobiliteitssaturatie vooraleer er tot (verdere) ontwikkeling van terreinen kan worden overgegaan. "@nl;
-    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking>.
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking/bevriezingDoorOverheid>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking/bevriezingDoorOverheid> .
 
 <https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/bevriezingDoorOverheid_waterproblematiek> a skos:Concept;
     skos:prefLabel "waterproblematiek door overheid"@nl;
     skos:definition "De ontwikkeling van het bedrijventerreinperceel wordt geblokkeerd omwille van de watergevoeligheid en/of overstromingsproblematiek tot zolang er geen compenserende maatregelen worden genomen om de waterproblematiek op te lossen.  Dus ook signaalgebieden (gebieden waarvoor een verscherpte watertoets geldt) waarvoor een ‘bouwvrije opgave’ geldt, worden onder deze combinatie van beperkingen opgenomen."@nl;
-    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking>.
+    skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking/bevriezingDoorOverheid>;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking/bevriezingDoorOverheid> .
 
 
 
