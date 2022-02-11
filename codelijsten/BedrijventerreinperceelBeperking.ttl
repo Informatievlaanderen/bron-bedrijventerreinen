@@ -74,10 +74,10 @@
 <https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/bevriezingDooroverheid> a skos:Concept;
     skos:prefLabel "bevriezing door overheid"@nl;
     skos:definition "Het bedrijventerreinperceel is bevroren door een (hangende) maatregel of beslissing van overheidsinstantie."@nl;
-    skos:narrower <https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/bevriezingdooroverheid_herzieningbestemming>;
-    skos:narrower <https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/bevriezingdooroverheid_juridischeprocedure>;
-    skos:narrower <https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/bevriezingdooroverheid_mobiliteitsproblematiek>;
-    skos:narrower <https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/bevriezingdooroverheid_waterproblematiek>;
+    skos:narrower <https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/bevriezingDoorOverheid_herzieningBestemming>;
+    skos:narrower <https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/bevriezingDoorOverheid_juridischeProcedure>;
+    skos:narrower <https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/bevriezingDoorOverheid_mobiliteitsproblematiek>;
+    skos:narrower <https://data.vlaanderen.be/id/concept/BedrijventerreinperceelBeperking/bevriezingDoorOverheid_waterproblematiek>;
     skos:inScheme <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking>;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BedrijventerreinperceelBeperking> .
 
