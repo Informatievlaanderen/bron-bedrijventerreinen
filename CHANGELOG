@@ -1,2 +1,6 @@
 2020-05-04
   - initiele configuratie implementatiemodel bron bedrijventerreinen
+2022-04-22
+  - introduceer klasse bedrijventerreinperceelAanbieding om aanbiedingsinformatie te behandelen i.p.v. een eenvoudige eigenschap aanbiedershomepage
+  - activeer het vocabularium bedrijventerrein.vlaanderen.be/ns/bedrijventerrein
+  
