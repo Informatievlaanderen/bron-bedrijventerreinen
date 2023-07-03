@@ -5,7 +5,7 @@ parameters:
     default: "latest"
   file_count:
     type: integer
-    default: 20
+    default: 19
   first_column_name:
     type: string
     default: "BedrijventerreinperceelAanbieding"
