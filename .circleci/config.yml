@@ -23,7 +23,7 @@ jobs:
       - run:
           name: install base software
           command: |
-            apt-get update && apt-get install -y vim dbview unzip wget less
+            apt-get update && apt-get install -y vim dbview unzip wget less jq
       - run:
           name: get remote file
           command: |
