@@ -1,2 +1,6 @@
 2020-05-04
   - setup en configuratie voor automatische conversie van fileGDB naar RDF volgens het implementatiemodel
+2023-10-09
+  - adjusted the circleci scripts to run based on a config file in the repository
+  - fixed references to context files on the production environment
+  - identified a bug in the generated context files: temporary fix done manually.
