@@ -26,16 +26,23 @@ jobs:
             apt-get update && apt-get install -y vim dbview unzip wget less
       - run:
           name: get remote file
-          command: wget <<pipeline.parameters.url>> -O /tmp/workspace/data.zip
+          command: |
+            export CIRCLEWKD=$( eval echo "${CIRCLE_WORKING_DIRECTORY}" )
+            export url=$(jq -r .url ${CIRCLEWKD}/config.json)
+            wget $url -O /tmp/workspace/data.zip
       - run:
           name: transform fileGDB to csv
           command: |
-            $PWD/scripts/geodb2csv.sh data  <<pipeline.parameters.first_column_name>>
+            export CIRCLEWKD=$( eval echo "${CIRCLE_WORKING_DIRECTORY}" )
+            export name=$(jq -r .name ${CIRCLEWKD}/config.json)
+            ${CIRCLEWKD}/scripts/geodb2csv.sh data $name
       - run:
           name: Test correct number of files
           command: |
+            export CIRCLEWKD=$( eval echo "${CIRCLE_WORKING_DIRECTORY}" )
+            export file_count=$(jq -r .file_count ${CIRCLEWKD}/config.json)
             ls -al /tmp/workspace/target
-            test `ls /tmp/workspace/target | wc -l` -eq <<pipeline.parameters.file_count>>
+            test `ls /tmp/workspace/target | wc -l` -eq $file_count
       - store_artifacts:
           path: /tmp/workspace/target
       - persist_to_workspace:
