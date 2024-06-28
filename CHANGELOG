@@ -4,3 +4,6 @@
   - adjusted the circleci scripts to run based on a config file in the repository
   - fixed references to context files on the production environment
   - identified a bug in the generated context files: temporary fix done manually.
+
+nb_files increased because of extra file BedrijventerreinPerceel_data.csv
+
