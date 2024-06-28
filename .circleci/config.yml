@@ -42,6 +42,8 @@ jobs:
             export CIRCLEWKD=$( eval echo "${CIRCLE_WORKING_DIRECTORY}" )
             export file_count=$(jq -r .file_count ${CIRCLEWKD}/config.json)
             ls -al /tmp/workspace/target
+            echo "file count:"
+            ls -al /tmp/workspace/target  | wc -l
             test `ls /tmp/workspace/target | wc -l` -eq $file_count
       - store_artifacts:
           path: /tmp/workspace/target
