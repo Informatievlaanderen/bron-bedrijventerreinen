@@ -45,7 +45,7 @@ jobs:
             echo "file count:"
             ls -al /tmp/workspace/target  | wc -l
             echo "expected file count: $file_count" 
-            test `ls /tmp/workspace/target | wc -l` -eq $file_count
+            test `ls -al /tmp/workspace/target | wc -l` -eq $file_count
       - store_artifacts:
           path: /tmp/workspace/target
       - persist_to_workspace:
