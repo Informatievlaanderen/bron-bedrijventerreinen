@@ -1,6 +1,6 @@
 {
   "@context": [
-    "https://github.com/Informatievlaanderen/bedrijvenenterreinen-Generated/raw/fa9a4e9288583e15d55e5d9f183c614f128e8638/doc/implementatiemodel/bedrijventerrein/erkendestandaard/2021-04-01/context/bedrijventerrein.jsonld"
+    "https://github.com/Informatievlaanderen/bedrijvenenterreinen-Generated/raw/fa9a4e9288583e15d55e5d9f183c614f128e8638/doc/implementatiemodel/bedrijventerrein/erkendestandaard/2021-04-01/context/bedrijventerrein.jsonld",
     {
     "uuid": "http://mu.semte.ch/vocabularies/core/uuid"
     }
